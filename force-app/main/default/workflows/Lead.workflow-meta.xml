@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Approval_Request_Update_Alert</fullName>
+        <description>Approval Request Update Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Approval_Request_Status_Update</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Applicant_Rejected_Email</fullName>
+        <description>Send Applicant Rejected Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>AutomationTemplates/Lead_Rejected_Email_Template_1715735707970</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Applicant_Selected_Email</fullName>
+        <description>Send Applicant Selected Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>AutomationTemplates/Lead_Selected_Email_Template_1715735643120</template>
+    </alerts>
+    <tasks>
+        <fullName>Schedule_Meeting_With_Applicant</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Schedule a meeting with the applicant for reward negotiations.</description>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Schedule Meeting With Applicant</subject>
+    </tasks>
+</Workflow>

@@ -1,0 +1,5 @@
+You have a new applicant approval waiting for a response.
+
+Applicant: {!Lead.FirstName} {!Lead.FirstName}
+Company: {!Lead.Company}
+Status: {!Lead.Status}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Great_Lakes_Application_Queue_Lead</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Queue</filterScope>
+    <label>Great Lakes Application Queue</label>
+    <queue>Great_Lakes_Application_Queue</queue>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Director_of_Illinois_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Indiana_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Iowa_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Michigan_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Minnesota_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Ohio_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Wisconsin_Sales</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

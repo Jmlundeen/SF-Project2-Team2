@@ -1,0 +1,6 @@
+Your approval request has been updated.
+
+Status: {!ApprovalRequest.Status}
+
+Comments: 
+{!ApprovalRequest.Comments}

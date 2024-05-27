@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enrollment_Date__c</fullName>
+    <description>When the company was enrolled into the program</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When the company got accepted within the program</inlineHelpText>
+    <label>Enrollment Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>

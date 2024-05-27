@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Open - Not Contacted</fullName>
+        <default>true</default>
+        <label>Open - Not Contacted</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Working - Contacted</fullName>
+        <default>false</default>
+        <label>Working - Contacted</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Converted</fullName>
+        <default>false</default>
+        <label>Closed - Converted</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Not Converted</fullName>
+        <default>false</default>
+        <label>Closed - Not Converted</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Concept Paper</fullName>
+        <default>false</default>
+        <label>Concept Paper</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Full Application</fullName>
+        <default>false</default>
+        <label>Full Application</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Selection</fullName>
+        <default>false</default>
+        <label>Selection</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Negotiation Stage</fullName>
+        <default>false</default>
+        <label>Negotiation Stage</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Project Performance</fullName>
+        <default>false</default>
+        <label>Project Performance</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected</fullName>
+        <default>false</default>
+        <label>Rejected</label>
+        <converted>false</converted>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Small_Business_Compact_Layout</fullName>
+    <fields>OwnerId</fields>
+    <fields>NumberOfEmployees</fields>
+    <fields>AnnualRevenue</fields>
+    <fields>Enrollment_Date__c</fields>
+    <fields>Time_In_Program__c</fields>
+    <label>Small Business Compact Layout</label>
+</CompactLayout>

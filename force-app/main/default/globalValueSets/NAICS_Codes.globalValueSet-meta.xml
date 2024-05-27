@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>541611 - Administrative &amp; General Management Consulting</fullName>
+        <default>true</default>
+        <label>541611 - Administrative &amp; General Management Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>541690 - Other Scientific &amp; Technical Consulting</fullName>
+        <default>false</default>
+        <label>541690 - Other Scientific &amp; Technical Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>541330 - Engineering Services</fullName>
+        <default>false</default>
+        <label>541330 - Engineering Services</label>
+    </customValue>
+    <customValue>
+        <fullName>561210 - Facilities Support Service</fullName>
+        <default>false</default>
+        <label>561210 - Facilities Support Service</label>
+    </customValue>
+    <customValue>
+        <fullName>541820 - Public Relations Agencies</fullName>
+        <default>false</default>
+        <label>541820 - Public Relations Agencies</label>
+    </customValue>
+    <customValue>
+        <fullName>541512 - Computer System Design Services</fullName>
+        <default>false</default>
+        <label>541512 - Computer System Design Services</label>
+    </customValue>
+    <customValue>
+        <fullName>541519 - Other Computer Related Services</fullName>
+        <default>false</default>
+        <label>541519 - Other Computer Related Services</label>
+    </customValue>
+    <customValue>
+        <fullName>519130 - Internet Publishing, Broadcasting, Web Search Portals</fullName>
+        <default>false</default>
+        <label>519130 - Internet Publishing, Broadcasting, Web Search Portals</label>
+    </customValue>
+    <customValue>
+        <fullName>541618 - Other Management Consulting Services</fullName>
+        <default>false</default>
+        <label>541618 - Other Management Consulting Services</label>
+    </customValue>
+    <customValue>
+        <fullName>333316 - Photographic &amp; Photocopying Equipment Manufacturing</fullName>
+        <default>false</default>
+        <label>333316 - Photographic &amp; Photocopying Equipment Manufacturing</label>
+    </customValue>
+    <description>NAICS codes</description>
+    <masterLabel>NAICS Codes</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

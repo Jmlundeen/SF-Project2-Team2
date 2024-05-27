@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Opportunity_del__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Funding Opportunity assigned to the account.</description>
+    <externalId>false</externalId>
+    <label>Funding Opportunity</label>
+    <referenceTo>Funding_Opportunity__c</referenceTo>
+    <relationshipLabel>Accounts</relationshipLabel>
+    <relationshipName>Accounts_del</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>
