@@ -1,0 +1,72 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Login",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"510977c0-5908-49af-8094-0bb7896e0507\",\"columns\":[{\"UUID\":\"72cacce8-70d6-4ecc-b7b1-3786aa028934\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":null},{\"UUID\":\"e21cf0d6-c91e-4446-b438-1d8c39fc7d9c\",\"columnName\":\"Column 2\",\"columnKey\":\"26328\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:logo",
+              "id" : "a4d035a5-6832-43e8-9d45-dbd918357736",
+              "type" : "component"
+            } ],
+            "id" : "72cacce8-70d6-4ecc-b7b1-3786aa028934",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:login",
+              "id" : "f284ba0c-58e4-4a79-999c-6dda6076c7c9",
+              "type" : "component"
+            } ],
+            "id" : "e21cf0d6-c91e-4446-b438-1d8c39fc7d9c",
+            "name" : "26328",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "510977c0-5908-49af-8094-0bb7896e0507",
+          "type" : "component"
+        } ],
+        "id" : "404ca790-cd40-4ae9-9b91-ab3c447dd300",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Login",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "d4ac2de3-508d-4438-acd7-b5ad3bb08f32",
+          "type" : "component"
+        } ],
+        "id" : "a4fe92b2-d5e6-44b9-be74-c025fa159d0e",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "e641b27b-4064-4f57-8689-e19117c72a89",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "login-main"
+  }
+}
