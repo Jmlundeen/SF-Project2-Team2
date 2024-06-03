@@ -1,0 +1,23 @@
+<template>
+    <lightning-modal-header label="Application Modal">EERE Small Business Application</lightning-modal-header>
+    <lightning-modal-body>
+        <lightning-record-form
+            object-api-name={Lead}
+            first-name={Name.FirstName}
+            last-name={Name.LastName}
+            contact-email={Email}
+            phone={Phone}
+            business-name={Company}
+            number-of-employees={NumberOfEmployees}
+            annual-revenue={AnnualRevenue}
+            naics-code={NAICS_Code_c}
+            region={Region_c}
+            state={State_c}
+            funding-opportunity={Funding_Opportunity_c}
+        >
+        </lightning-record-form> 
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <lightning-button label="Submit" onclick={handleOkay}></lightning-button>
+    </lightning-modal-footer>
+</template>
