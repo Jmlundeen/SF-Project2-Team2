@@ -1,0 +1,55 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "small-business-account",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"3876ec71-6f05-44bb-8763-6042f9036bb7\",\"columns\":[{\"UUID\":\"8f0d8f9c-2354-47a5-a558-1cad1b25a7ee\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "id" : "8f0d8f9c-2354-47a5-a558-1cad1b25a7ee",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "3876ec71-6f05-44bb-8763-6042f9036bb7",
+          "type" : "component"
+        } ],
+        "id" : "5e554142-c20c-40ca-9ef4-e6232781fbff",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "small-business-account",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "d82a3d50-6f33-4883-9409-325b58a7af77",
+          "type" : "component"
+        } ],
+        "id" : "ee3c80bf-65d3-49dc-83cb-114bcdc8e914",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "40d5576e-06ff-4d79-add7-0cd9751d8009",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-small-business-account"
+  }
+}
