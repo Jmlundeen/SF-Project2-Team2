@@ -1,0 +1,13 @@
+.navBar{
+    background-color: white;
+}
+img{
+    width: 150px;
+    height: 75px;
+}
+.button{
+    border-radius: 50px;
+}
+a{
+    color: black;
+}

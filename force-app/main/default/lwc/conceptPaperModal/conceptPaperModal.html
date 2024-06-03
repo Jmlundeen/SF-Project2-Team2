@@ -1,0 +1,23 @@
+<template>
+    <lightning-modal-header label="Application Modal">Concept Paper Submission Form</lightning-modal-header>
+    <lightning-modal-body>
+        <lightning-record-form
+            object-api-name={Lead}
+            name={Name}
+            email={Email}
+            phone={Phone}
+            funding-opportunity={Funding_Opportunity_c}
+            naics-code={NAICS_Code_c}
+            region={Region_c}
+            state={State_c}
+            company={Company}
+            annual-revenue={AnnualRevenue}
+            number-of-employees={NumberOfEmployees}
+            budget-share={Budget_Share_c}  
+        >
+        </lightning-record-form> 
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <lightning-button label="Submit" onclick={handleOkay}></lightning-button>
+    </lightning-modal-footer>
+</template>
