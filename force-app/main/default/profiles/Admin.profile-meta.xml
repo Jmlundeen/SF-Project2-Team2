@@ -5,11 +5,6 @@
         <default>true</default>
         <visible>true</visible>
     </applicationVisibilities>
-    <classAccesses>
-        <apexClass>CalculateDate</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <custom>false</custom>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Active__c</field>
@@ -361,7 +356,7 @@
         <tab>standard-Lead</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
-        <classAccesses>
+    <classAccesses>
         <apexClass>ChangePasswordController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -463,6 +458,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>SiteRegisterControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CalculateDate</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <custom>false</custom>
