@@ -1,16 +1,22 @@
 {
   "orgName": "Project 2 Scratch Org",
   "edition": "Developer",
-  "features": ["EnableSetPasswordInApi"],
+  "features": ["Communities","Sites", "EnableSetPasswordInApi"],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
     },
-    "emailTemplateSettings": {
-      "enableTemplateEnhancedFolderPref": true
-    },
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled": true
+    },
+    "experienceBundleSettings": {
+      "enableExperienceBundleMetadata": true
+    },
+    "emailTemplateSettings": {
+      "enableTemplateEnhancedFolderPref": true
     }
   }
 }
