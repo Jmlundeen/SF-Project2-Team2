@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Partner Account Information" icon-name="standard:account">
+        <div class="slds-var-m-around_medium">
+            <template lwc:if={account}>
+                <c-account-violation-error account={account}></c-account-violation-error>
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_1-of-3">
+                        <c-form-element field="Name" value={account.name}></c-form-element>
+                        <c-form-element field="NAICS Code" value={account.naicsCode}></c-form-element>
+                        <c-form-element field="Enrollment Date" value={account.enrollmentDate} type="date"></c-form-element>
+                        <c-form-element field="Time In Program" value={account.timeInProgram}></c-form-element>
+                        <c-form-element field="Active" value={account.active}></c-form-element>
+                        <c-form-element field="Region" value={account.region}></c-form-element>
+                        <c-form-element field="State" value={account.state}></c-form-element>
+                    </div>
+                    <div class="slds-col slds-size_1-of-12">
+                        
+                    </div>
+                    <div class="slds-col slds-size_1-of-3">
+                        <c-form-element field="Phone" value={account.phone} type="phone"></c-form-element>
+                        <c-form-element field="Number of Employees" value={account.numberOfEmployees} type="number"></c-form-element>
+                        <c-form-element field="Annual Revenue" value={account.annualRevenue} type="number"></c-form-element>
+                        <c-form-element field="Budget Share" value={account.budgetShare} type="percent"></c-form-element>
+                        <c-form-element field="Funding Opportunity" value={account.fundingOpportunity}></c-form-element>
+                        <c-form-element field="Approved Funding" value={account.approvedFunding} type="number"></c-form-element>
+                        <c-form-element field="Contract Length" value={account.contractLength}></c-form-element>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
