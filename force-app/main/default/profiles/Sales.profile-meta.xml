@@ -103,11 +103,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Funding_Opportunity__c.Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Lead.Approved_Funding__c</field>
         <readable>true</readable>
     </fieldPermissions>
