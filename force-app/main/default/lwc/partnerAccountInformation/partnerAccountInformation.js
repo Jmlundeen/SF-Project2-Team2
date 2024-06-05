@@ -1,15 +1,16 @@
 import { LightningElement, api, wire } from 'lwc';
+import Id from '@salesforce/user/Id';
 import getPartnerAccountInformation from '@salesforce/apex/PartnerAccountInformationController.getPartnerAccountInformation';
 
 export default class PartnerAccountInformation extends LightningElement {
-    @api recordId;
+    userId = Id;
     account;
     errorMessage;
 
-    @wire(getPartnerAccountInformation, { recordId: '$recordId'})
+    @wire(getPartnerAccountInformation, { userId: '$userId'})
     getAccount(result) {
         if (result.data) {
-            const record = result.data[0];
+            const record = result.data;
             console.log('record', record);
             const account = {
                 name: record['Name'],
@@ -20,8 +21,7 @@ export default class PartnerAccountInformation extends LightningElement {
                 active: record['Active__c'],
                 region: record['Region__c'],
                 state: record['State__c'],
-                // numberOfEmployees: record['NumberOfEmployees'],
-                numberOfEmployees: 1600,
+                numberOfEmployees: record['NumberOfEmployees'],
                 annualRevenue: record['AnnualRevenue'],
                 budgetShare: Number(record['Budget_Share__c']) / 100,
                 fundingOpportunity: record['Funding_Opportunity_del__r'].Name,
