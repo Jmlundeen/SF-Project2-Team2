@@ -1,17 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>Pacific Application Queue</name>
-    <queueMembers>
-        <roleAndSubordinatesInternal>
-            <roleAndSubordinateInternal>Alaska_Sales_Manager</roleAndSubordinateInternal>
-            <roleAndSubordinateInternal>Hawaii_Sales_Manager</roleAndSubordinateInternal>
-            <roleAndSubordinateInternal>Idaho_Sales_Manager</roleAndSubordinateInternal>
-            <roleAndSubordinateInternal>Montana_Sales_Manager</roleAndSubordinateInternal>
-            <roleAndSubordinateInternal>Oregon_Sales_Manager</roleAndSubordinateInternal>
-            <roleAndSubordinateInternal>Washington_Sales_Manager</roleAndSubordinateInternal>
-        </roleAndSubordinatesInternal>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>

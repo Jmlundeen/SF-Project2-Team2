@@ -1,0 +1,35 @@
+<template>
+  <h1>EERE Small Business Portal Login</h1>
+  <br /><br />
+  <form action="" method="GET">
+    <lightning-input
+      type="text"
+      label="User Name:"
+      name="input1"
+      onchange={handleUsernameOnChange}
+    ></lightning-input>
+    <lightning-input
+      type="password"
+      label="Password:"
+      name="password"
+      onchange={handlePasswordOnChange}
+    ></lightning-input>
+    <!--<button type="submit">Log In</button>-->
+    <template lwc:if={errorMessage}>
+      <div class="slds-text-color_error">{errorMessage}</div>
+    </template>
+    <lightning-button
+      label="Login"
+      class="slds-m-left_x-small slds-align_absolute-center"
+      onclick={handleSubmit}
+    >
+      Login
+    </lightning-button>
+    <lightning-input
+      type="checkbox"
+      label="Remember Me"
+      name="remember"
+    ></lightning-input>
+  </form>
+  <a href="">Forgot your password?</a>
+</template>

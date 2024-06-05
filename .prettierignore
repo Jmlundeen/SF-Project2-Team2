@@ -9,3 +9,9 @@
 .vscode
 
 coverage/
+
+# Ignore Apex Files.
+**/*.cls
+
+# Ignore JS files.
+**/*.js

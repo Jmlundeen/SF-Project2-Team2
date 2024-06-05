@@ -8,6 +8,9 @@
 .localdevserver/
 deploy-options.json
 
+# VSCode Config files.
+.vscode/
+
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
 
@@ -43,3 +46,4 @@ $RECYCLE.BIN/
 **/__pycache__/
 **/.venv/
 **/venv/
+

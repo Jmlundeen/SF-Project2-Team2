@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="UTF-8" ?>
+<Flow
+  xmlns="http://soap.sforce.com/2006/04/metadata"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+>
     <actionCalls>
-        <description>Applies lead assignment rules within the flow for new leads</description>
+        <description
+    >Applies lead assignment rules within the flow for new leads</description>
         <name>Apply_Lead_Assignment_Rules</name>
         <label>Apply Lead Assignment Rules</label>
         <locationX>1623</locationX>
@@ -26,7 +30,8 @@
         <versionSegment>1</versionSegment>
     </actionCalls>
     <actionCalls>
-        <description>Discouragement email for concept paper applications</description>
+        <description
+    >Discouragement email for concept paper applications</description>
         <name>Concept_Paper_Discouragement</name>
         <label>Concept Paper Discouragement</label>
         <locationX>2406</locationX>
@@ -61,7 +66,8 @@
         <inputParameters>
             <name>emailBody</name>
             <value>
-                <elementReference>concept_paper_discourage_email_body_text</elementReference>
+                <elementReference
+        >concept_paper_discourage_email_body_text</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
@@ -92,7 +98,8 @@
         <versionSegment>1</versionSegment>
     </actionCalls>
     <actionCalls>
-        <description>Encouragement email for concept paper applications</description>
+        <description
+    >Encouragement email for concept paper applications</description>
         <name>Concept_Paper_Encouragement</name>
         <label>Concept Paper Encouragement</label>
         <locationX>2300</locationX>
@@ -127,7 +134,8 @@
         <inputParameters>
             <name>emailBody</name>
             <value>
-                <elementReference>concept_paper_encourage_email_body</elementReference>
+                <elementReference
+        >concept_paper_encourage_email_body</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
@@ -225,7 +233,8 @@
     </actionCalls>
     <apiVersion>60.0</apiVersion>
     <assignments>
-        <description>Adds temporary file record to file record collection</description>
+        <description
+    >Adds temporary file record to file record collection</description>
         <name>Add_to_File_Collection_Record</name>
         <label>Add to File Collection Record</label>
         <locationX>1833</locationX>
@@ -242,7 +251,8 @@
         </connector>
     </assignments>
     <assignments>
-        <description>Assign document id&apos;s from file upload screen to collection.</description>
+        <description
+    >Assign document id&apos;s from file upload screen to collection.</description>
         <name>Assign_Document_Ids</name>
         <label>Assign Document Ids</label>
         <locationX>1408</locationX>
@@ -251,28 +261,32 @@
             <assignToReference>file_upload_document_ids</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>concept_paper_file.contentDocIds</elementReference>
+                <elementReference
+        >concept_paper_file.contentDocIds</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>file_upload_document_ids</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>project_summary.contentDocIds</elementReference>
+                <elementReference
+        >project_summary.contentDocIds</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>file_upload_document_ids</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>budget_justification.contentDocIds</elementReference>
+                <elementReference
+        >budget_justification.contentDocIds</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>file_upload_document_ids</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>technical_volume.contentDocIds</elementReference>
+                <elementReference
+        >technical_volume.contentDocIds</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -280,7 +294,8 @@
         </connector>
     </assignments>
     <assignments>
-        <description>Assigns lead returned from searching for existing lead.</description>
+        <description
+    >Assigns lead returned from searching for existing lead.</description>
         <name>Assign_Lead_From_Search</name>
         <label>Assign Lead From Search</label>
         <locationX>1541</locationX>
@@ -297,20 +312,23 @@
         </connector>
     </assignments>
     <assignments>
-        <description>Assign file values to temporary content record</description>
+        <description
+    >Assign file values to temporary content record</description>
         <name>Assign_Temp_File_Values</name>
         <label>Assign Temp File Values</label>
         <locationX>2046</locationX>
         <locationY>993</locationY>
         <assignmentItems>
-            <assignToReference>file_temp_record_var.ContentDocumentId</assignToReference>
+            <assignToReference
+      >file_temp_record_var.ContentDocumentId</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>Loop_Over_Files</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>file_temp_record_var.LinkedEntityId</assignToReference>
+            <assignToReference
+      >file_temp_record_var.LinkedEntityId</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>applicant_lead_record.Id</elementReference>
@@ -355,7 +373,8 @@
         </value>
     </choices>
     <constants>
-        <description>Lists the acceptable file formats for the upload screen.</description>
+        <description
+    >Lists the acceptable file formats for the upload screen.</description>
         <name>acceptable_file_formats</name>
         <dataType>String</dataType>
         <value>
@@ -363,7 +382,8 @@
         </value>
     </constants>
     <decisions>
-        <description>Decision tree before success screen to determine if a concept paper or full application should be handled</description>
+        <description
+    >Decision tree before success screen to determine if a concept paper or full application should be handled</description>
         <name>Concept_or_Full_Application_Decision</name>
         <label>Concept or Full Application Decision</label>
         <locationX>2039</locationX>
@@ -376,7 +396,8 @@
             <name>Is_Concept_Paper_Encourage</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Which_application_are_you_submitting</leftValueReference>
+                <leftValueReference
+        >Which_application_are_you_submitting</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <elementReference>isConceptPaper</elementReference>
@@ -390,7 +411,8 @@
                 </rightValue>
             </conditions>
             <conditions>
-                <leftValueReference>Get_Funding_Opportunity.Minimum_Budget_Share__c</leftValueReference>
+                <leftValueReference
+        >Get_Funding_Opportunity.Minimum_Budget_Share__c</leftValueReference>
                 <operator>LessThanOrEqualTo</operator>
                 <rightValue>
                     <elementReference>budget_share</elementReference>
@@ -419,7 +441,8 @@
                 </rightValue>
             </conditions>
             <conditions>
-                <leftValueReference>Get_Funding_Opportunity.Minimum_Budget_Share__c</leftValueReference>
+                <leftValueReference
+        >Get_Funding_Opportunity.Minimum_Budget_Share__c</leftValueReference>
                 <operator>GreaterThanOrEqualTo</operator>
                 <rightValue>
                     <elementReference>budget_share</elementReference>
@@ -439,7 +462,8 @@
         </rules>
     </decisions>
     <decisions>
-        <description>Check if file exists within the file record id&apos;s collection.</description>
+        <description
+    >Check if file exists within the file record id&apos;s collection.</description>
         <name>Does_File_Exist</name>
         <label>Does File Exist</label>
         <locationX>2037</locationX>
@@ -487,7 +511,8 @@
             <label>Lead Exists</label>
         </rules>
     </decisions>
-    <description>Helps to navigate through the EERE program initial application.</description>
+    <description
+  >Helps to navigate through the EERE program initial application.</description>
     <dynamicChoiceSets>
         <description>Available funding opportunities for applicant</description>
         <name>Available_Funding_Opportunities</name>
@@ -498,21 +523,24 @@
             <field>Region__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>region_state_picklists.topValue</elementReference>
+                <elementReference
+        >region_state_picklists.topValue</elementReference>
             </value>
         </filters>
         <filters>
             <field>State__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>region_state_picklists.middleValue</elementReference>
+                <elementReference
+        >region_state_picklists.middleValue</elementReference>
             </value>
         </filters>
         <filters>
             <field>NAICS_Code__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>business_information_NAICS_code</elementReference>
+                <elementReference
+        >business_information_NAICS_code</elementReference>
             </value>
         </filters>
         <filters>
@@ -526,20 +554,32 @@
         <valueField>Id</valueField>
     </dynamicChoiceSets>
     <dynamicChoiceSets>
+        <description>picklist values of NAICS codes</description>
+        <name>naics_code_picklist</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
+        <picklistField>NAICS_Code__c</picklistField>
+        <picklistObject>Lead</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
         <description>Picklist values for the NAICS business codes</description>
         <name>NAICS_codes_picklist</name>
         <dataType>Picklist</dataType>
-        <displayField xsi:nil="true"/>
-        <object xsi:nil="true"/>
+        <displayField xsi:nil="true" />
+        <object xsi:nil="true" />
         <picklistField>NAICS_Code__c</picklistField>
         <picklistObject>Funding_Opportunity__c</picklistObject>
     </dynamicChoiceSets>
     <environments>Default</environments>
-    <interviewLabel>Small Business Application {!$Flow.CurrentDateTime}</interviewLabel>
-    <isAdditionalPermissionRequiredToRun>true</isAdditionalPermissionRequiredToRun>
+    <interviewLabel
+  >Small Business Application {!$Flow.CurrentDateTime}</interviewLabel>
+    <isAdditionalPermissionRequiredToRun
+  >true</isAdditionalPermissionRequiredToRun>
     <label>Small Business Application</label>
     <loops>
-        <description>Loops over the uploaded files to associate with the</description>
+        <description
+    >Loops over the uploaded files to associate with the</description>
         <name>Loop_Over_Files</name>
         <label>Loop Over Files</label>
         <locationX>1825</locationX>
@@ -573,13 +613,15 @@
     </processMetadataValues>
     <processType>Flow</processType>
     <recordCreates>
-        <description>Creates the file records for each uploaded file and links them to lead created as well.</description>
+        <description
+    >Creates the file records for each uploaded file and links them to lead created as well.</description>
         <name>Create_File_Document_Records</name>
         <label>Create File Document Records</label>
         <locationX>1821</locationX>
         <locationY>607</locationY>
         <connector>
-            <targetReference>Concept_or_Full_Application_Decision</targetReference>
+            <targetReference
+      >Concept_or_Full_Application_Decision</targetReference>
         </connector>
         <faultConnector>
             <targetReference>Error_Screen_0</targetReference>
@@ -592,7 +634,8 @@
         <label>Applicant Lead Record</label>
         <locationX>1409</locationX>
         <locationY>1055</locationY>
-        <assignRecordIdToReference>applicant_lead_record.Id</assignRecordIdToReference>
+        <assignRecordIdToReference
+    >applicant_lead_record.Id</assignRecordIdToReference>
         <connector>
             <targetReference>Apply_Lead_Assignment_Rules</targetReference>
         </connector>
@@ -620,13 +663,15 @@
         <inputAssignments>
             <field>Email</field>
             <value>
-                <elementReference>business_information_email.value</elementReference>
+                <elementReference
+        >business_information_email.value</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>FirstName</field>
             <value>
-                <elementReference>business_information_applicant_name.firstName</elementReference>
+                <elementReference
+        >business_information_applicant_name.firstName</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -638,13 +683,15 @@
         <inputAssignments>
             <field>LastName</field>
             <value>
-                <elementReference>business_information_applicant_name.lastName</elementReference>
+                <elementReference
+        >business_information_applicant_name.lastName</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>NAICS_Code__c</field>
             <value>
-                <elementReference>business_information_NAICS_code</elementReference>
+                <elementReference
+        >business_information_NAICS_code</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -668,13 +715,15 @@
         <inputAssignments>
             <field>Region__c</field>
             <value>
-                <elementReference>region_state_picklists.topValue</elementReference>
+                <elementReference
+        >region_state_picklists.topValue</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>State__c</field>
             <value>
-                <elementReference>region_state_picklists.middleValue</elementReference>
+                <elementReference
+        >region_state_picklists.middleValue</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -686,12 +735,14 @@
         <object>Lead</object>
     </recordCreates>
     <recordLookups>
-        <description>Searches for existing lead from contact information</description>
+        <description
+    >Searches for existing lead from contact information</description>
         <name>Get_Existing_Lead</name>
         <label>Get Existing Lead</label>
         <locationX>1408</locationX>
         <locationY>638</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <assignNullValuesIfNoRecordsFound
+    >false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Does_Lead_Exist</targetReference>
         </connector>
@@ -703,21 +754,24 @@
             <field>FirstName</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>business_information_applicant_name.firstName</elementReference>
+                <elementReference
+        >business_information_applicant_name.firstName</elementReference>
             </value>
         </filters>
         <filters>
             <field>LastName</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>business_information_applicant_name.lastName</elementReference>
+                <elementReference
+        >business_information_applicant_name.lastName</elementReference>
             </value>
         </filters>
         <filters>
             <field>Email</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>business_information_email.value</elementReference>
+                <elementReference
+        >business_information_email.value</elementReference>
             </value>
         </filters>
         <filters>
@@ -737,7 +791,8 @@
         <label>Get Funding Opportunity</label>
         <locationX>1126</locationX>
         <locationY>339</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <assignNullValuesIfNoRecordsFound
+    >false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>File_Upload_Screen</targetReference>
         </connector>
@@ -806,7 +861,7 @@
         </inputAssignments>
         <object>Lead</object>
     </recordUpdates>
-    <runInMode>SystemModeWithoutSharing</runInMode>
+    <runInMode>DefaultMode</runInMode>
     <screens>
         <description>Takes information about the business</description>
         <name>Business_Information</name>
@@ -829,7 +884,8 @@
                     <booleanValue>false</booleanValue>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <inputsOnNextNavToAssocScrn
+      >UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
@@ -855,7 +911,8 @@
                     <booleanValue>true</booleanValue>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <inputsOnNextNavToAssocScrn
+      >UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
@@ -869,7 +926,8 @@
                     <booleanValue>true</booleanValue>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <inputsOnNextNavToAssocScrn
+      >UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
@@ -878,7 +936,8 @@
             <dataType>String</dataType>
             <fieldText>Business Name</fieldText>
             <fieldType>InputField</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <inputsOnNextNavToAssocScrn
+      >UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -886,12 +945,15 @@
             <dataType>Number</dataType>
             <fieldText>No. of employees</fieldText>
             <fieldType>InputField</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <inputsOnNextNavToAssocScrn
+      >UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <scale>0</scale>
             <validationRule>
-                <errorMessage>&lt;p&gt;Number of employees cannot be negative.&lt;/p&gt;</errorMessage>
-                <formulaExpression>{!No_of_employees} &gt;= 0</formulaExpression>
+                <errorMessage
+        >&lt;p&gt;Number of employees cannot be negative.&lt;/p&gt;</errorMessage>
+                <formulaExpression
+        >{!No_of_employees} &gt;= 0</formulaExpression>
             </validationRule>
         </fields>
         <fields>
@@ -902,11 +964,13 @@
             </defaultValue>
             <fieldText>Annual Revenue</fieldText>
             <fieldType>InputField</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <inputsOnNextNavToAssocScrn
+      >UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>false</isRequired>
             <scale>0</scale>
             <validationRule>
-                <errorMessage>&lt;p&gt;Annual Revenue cannot be negative.&lt;/p&gt;</errorMessage>
+                <errorMessage
+        >&lt;p&gt;Annual Revenue cannot be negative.&lt;/p&gt;</errorMessage>
                 <formulaExpression>{!Annual_Revenue} &gt;= 0</formulaExpression>
             </validationRule>
         </fields>
@@ -918,21 +982,25 @@
             </defaultValue>
             <fieldText>Budget Share</fieldText>
             <fieldType>InputField</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <inputsOnNextNavToAssocScrn
+      >UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>false</isRequired>
             <scale>0</scale>
             <validationRule>
-                <errorMessage>&lt;p&gt;Enter a value in the range of 0-100&lt;/p&gt;</errorMessage>
-                <formulaExpression>({!budget_share} &gt;= 0 &amp;&amp; {!budget_share} &lt;= 100)</formulaExpression>
+                <errorMessage
+        >&lt;p&gt;Enter a value in the range of 0-100&lt;/p&gt;</errorMessage>
+                <formulaExpression
+        >({!budget_share} &gt;= 0 &amp;&amp; {!budget_share} &lt;= 100)</formulaExpression>
             </validationRule>
         </fields>
         <fields>
             <name>business_information_NAICS_code</name>
-            <choiceReferences>NAICS_codes_picklist</choiceReferences>
+            <choiceReferences>naics_code_picklist</choiceReferences>
             <dataType>String</dataType>
             <fieldText>NAICS code</fieldText>
             <fieldType>DropdownBox</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <inputsOnNextNavToAssocScrn
+      >UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -942,7 +1010,7 @@
             <inputParameters>
                 <name>dependencyWrapperApiName</name>
                 <value>
-                    <stringValue>Funding_Opportunity__c</stringValue>
+                    <stringValue>Lead</stringValue>
                 </value>
             </inputParameters>
             <inputParameters>
@@ -993,7 +1061,8 @@
                     <elementReference>state_picklist_value</elementReference>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <inputsOnNextNavToAssocScrn
+      >UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
@@ -1013,7 +1082,8 @@
         </connector>
         <fields>
             <name>record_creation_error</name>
-            <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(247, 6, 6); font-size: 18px;&quot;&gt;An error occurred processing your information.&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldText
+      >&lt;p&gt;&lt;strong style=&quot;color: rgb(247, 6, 6); font-size: 18px;&quot;&gt;An error occurred processing your information.&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
@@ -1032,7 +1102,8 @@
         </connector>
         <fields>
             <name>record_creation_error_0</name>
-            <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(247, 6, 6); font-size: 18px;&quot;&gt;An error occurred processing your information.&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldText
+      >&lt;p&gt;&lt;strong style=&quot;color: rgb(247, 6, 6); font-size: 18px;&quot;&gt;An error occurred processing your information.&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
@@ -1074,16 +1145,19 @@
             <inputParameters>
                 <name>contentDocIds</name>
                 <value>
-                    <elementReference>file_upload_document_ids</elementReference>
+                    <elementReference
+          >file_upload_document_ids</elementReference>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <inputsOnNextNavToAssocScrn
+      >UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
-                    <leftValueReference>Which_application_are_you_submitting</leftValueReference>
+                    <leftValueReference
+          >Which_application_are_you_submitting</leftValueReference>
                     <operator>EqualTo</operator>
                     <rightValue>
                         <elementReference>isConceptPaper</elementReference>
@@ -1110,7 +1184,8 @@
             <inputParameters>
                 <name>contentDocIds</name>
                 <value>
-                    <elementReference>file_upload_document_ids</elementReference>
+                    <elementReference
+          >file_upload_document_ids</elementReference>
                 </value>
             </inputParameters>
             <inputParameters>
@@ -1119,13 +1194,15 @@
                     <booleanValue>false</booleanValue>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <inputsOnNextNavToAssocScrn
+      >UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
-                    <leftValueReference>Which_application_are_you_submitting</leftValueReference>
+                    <leftValueReference
+          >Which_application_are_you_submitting</leftValueReference>
                     <operator>EqualTo</operator>
                     <rightValue>
                         <elementReference>isFullApplication</elementReference>
@@ -1158,16 +1235,19 @@
             <inputParameters>
                 <name>contentDocIds</name>
                 <value>
-                    <elementReference>file_upload_document_ids</elementReference>
+                    <elementReference
+          >file_upload_document_ids</elementReference>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <inputsOnNextNavToAssocScrn
+      >UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
-                    <leftValueReference>Which_application_are_you_submitting</leftValueReference>
+                    <leftValueReference
+          >Which_application_are_you_submitting</leftValueReference>
                     <operator>EqualTo</operator>
                     <rightValue>
                         <elementReference>isFullApplication</elementReference>
@@ -1200,16 +1280,19 @@
             <inputParameters>
                 <name>contentDocIds</name>
                 <value>
-                    <elementReference>file_upload_document_ids</elementReference>
+                    <elementReference
+          >file_upload_document_ids</elementReference>
                 </value>
             </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <inputsOnNextNavToAssocScrn
+      >UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
-                    <leftValueReference>Which_application_are_you_submitting</leftValueReference>
+                    <leftValueReference
+          >Which_application_are_you_submitting</leftValueReference>
                     <operator>EqualTo</operator>
                     <rightValue>
                         <elementReference>isFullApplication</elementReference>
@@ -1235,7 +1318,8 @@
         </connector>
         <fields>
             <name>funding_selection_instruction_text</name>
-            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;Please select an available Funding Opportunity from the list. &lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;If none are available, you may still proceed with the application.&lt;/p&gt;</fieldText>
+            <fieldText
+      >&lt;p style=&quot;text-align: center;&quot;&gt;Please select an available Funding Opportunity from the list. &lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;If none are available, you may still proceed with the application.&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -1244,14 +1328,16 @@
             <dataType>String</dataType>
             <fieldText>Funding Opportunity</fieldText>
             <fieldType>DropdownBox</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <inputsOnNextNavToAssocScrn
+      >UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>false</isRequired>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
     <screens>
-        <description>Initial screen to select which type of application to submit.</description>
+        <description
+    >Initial screen to select which type of application to submit.</description>
         <name>Select_Application_Type</name>
         <label>Select Application Type</label>
         <locationX>500</locationX>
@@ -1286,7 +1372,8 @@
                     <dataType>Boolean</dataType>
                     <fieldText>Which application are you submitting?</fieldText>
                     <fieldType>RadioButtons</fieldType>
-                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <inputsOnNextNavToAssocScrn
+          >UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>true</isRequired>
                 </fields>
                 <inputParameters>
@@ -1315,7 +1402,8 @@
         <showHeader>true</showHeader>
     </screens>
     <screens>
-        <description>Final success screen letting the applicant know they are finished with the application.</description>
+        <description
+    >Final success screen letting the applicant know they are finished with the application.</description>
         <name>Success_Screen</name>
         <label>Success Screen</label>
         <locationX>2350</locationX>
@@ -1325,14 +1413,16 @@
         <allowPause>false</allowPause>
         <fields>
             <name>thank_you_confirmation</name>
-            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 22px;&quot;&gt;Thank you for applying!﻿&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: rgb(24, 26, 27); color: rgb(189, 183, 175);&quot;&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;You should be receiving a confirmation email with more details shortly.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldText
+      >&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 22px;&quot;&gt;Thank you for applying!﻿&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: rgb(24, 26, 27); color: rgb(189, 183, 175);&quot;&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;You should be receiving a confirmation email with more details shortly.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
     <screens>
-        <description>Welcome screen for the application, displays suggested items to have prepared before starting.</description>
+        <description
+    >Welcome screen for the application, displays suggested items to have prepared before starting.</description>
         <name>Welcome_Screen</name>
         <label>Welcome Screen</label>
         <locationX>662</locationX>
@@ -1345,12 +1435,14 @@
         </connector>
         <fields>
             <name>concept_paper_welcome_text_display</name>
-            <fieldText>&lt;p&gt;{!welcome_text_greeting}&lt;/p&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;{!concept_paper_welcome_text_required_items}&lt;/p&gt;&lt;p&gt;{!proceed_text}&lt;/p&gt;</fieldText>
+            <fieldText
+      >&lt;p&gt;{!welcome_text_greeting}&lt;/p&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;{!concept_paper_welcome_text_required_items}&lt;/p&gt;&lt;p&gt;{!proceed_text}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
-                    <leftValueReference>Which_application_are_you_submitting</leftValueReference>
+                    <leftValueReference
+          >Which_application_are_you_submitting</leftValueReference>
                     <operator>EqualTo</operator>
                     <rightValue>
                         <elementReference>isConceptPaper</elementReference>
@@ -1360,12 +1452,14 @@
         </fields>
         <fields>
             <name>full_application_welcome_text</name>
-            <fieldText>&lt;p&gt;{!welcome_text_greeting}&lt;/p&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;{!full_application_welcome_text_required_items}&lt;/p&gt;&lt;p&gt;{!proceed_text}&lt;/p&gt;</fieldText>
+            <fieldText
+      >&lt;p&gt;{!welcome_text_greeting}&lt;/p&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;{!full_application_welcome_text_required_items}&lt;/p&gt;&lt;p&gt;{!proceed_text}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
-                    <leftValueReference>Which_application_are_you_submitting</leftValueReference>
+                    <leftValueReference
+          >Which_application_are_you_submitting</leftValueReference>
                     <operator>EqualTo</operator>
                     <rightValue>
                         <elementReference>isFullApplication</elementReference>
@@ -1388,42 +1482,53 @@
         <description>Email body text for a discourage email.</description>
         <name>concept_paper_discourage_email_body_text</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Thank you for submitting an application for the EERE Small Business Program! We appreciate your interest and the effort you&apos;ve invested in the initial application process.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;After careful consideration, we regret to inform you that your application does not fully meet the criteria outlined for participation in the program at this time. However, we understand that each application represents a unique perspective, and we encourage you to consider submitting a full application if you believe there are aspects of your proposal that may not have been fully captured in your initial submission. Please be aware that while you are welcome to submit a full application, it is less likely to be accepted based on the initial evaluation.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Thank you again for your interest in the EERE Small Business Program. We wish you the best of luck with your future endeavors and hope to see your continued growth and success.&lt;/p&gt;</text>
+        <text
+    >&lt;p&gt;Thank you for submitting an application for the EERE Small Business Program! We appreciate your interest and the effort you&apos;ve invested in the initial application process.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;After careful consideration, we regret to inform you that your application does not fully meet the criteria outlined for participation in the program at this time. However, we understand that each application represents a unique perspective, and we encourage you to consider submitting a full application if you believe there are aspects of your proposal that may not have been fully captured in your initial submission. Please be aware that while you are welcome to submit a full application, it is less likely to be accepted based on the initial evaluation.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Thank you again for your interest in the EERE Small Business Program. We wish you the best of luck with your future endeavors and hope to see your continued growth and success.&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
-        <description>Body text for a concept paper encourage email.</description>
+        <description
+    >Body text for a concept paper encourage email.</description>
         <name>concept_paper_encourage_email_body</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Thank you for submitting an application for the EERE Small Business Program! We appreciate your interest and the effort you&apos;ve invested in the initial application process.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;After reviewing your submission, we invite you to proceed with a full application to further explore the possibilities of collaboration.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Submitting a full application will allow us to delve deeper into your proposal and better understand how your business goals align with the objectives of the EERE Small Business Program. Please review the detailed criteria outlined on our website to ensure your full application addresses all relevant aspects.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Should you have any questions or require clarification on any aspect of the application process, please do not hesitate to reach out to us. We are here to support you throughout the process.&lt;/p&gt;&lt;p&gt;We look forward to receiving your full application and further exploring the potential of our partnership.&lt;/p&gt;</text>
+        <text
+    >&lt;p&gt;Thank you for submitting an application for the EERE Small Business Program! We appreciate your interest and the effort you&apos;ve invested in the initial application process.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;After reviewing your submission, we invite you to proceed with a full application to further explore the possibilities of collaboration.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Submitting a full application will allow us to delve deeper into your proposal and better understand how your business goals align with the objectives of the EERE Small Business Program. Please review the detailed criteria outlined on our website to ensure your full application addresses all relevant aspects.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Should you have any questions or require clarification on any aspect of the application process, please do not hesitate to reach out to us. We are here to support you throughout the process.&lt;/p&gt;&lt;p&gt;We look forward to receiving your full application and further exploring the potential of our partnership.&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
-        <description>List of items applicant should have for concept paper form.</description>
+        <description
+    >List of items applicant should have for concept paper form.</description>
         <name>concept_paper_welcome_text_required_items</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;ul&gt;&lt;li&gt;Concept paper with the following requirements:&lt;ul&gt;&lt;li&gt;Contact information for your technical and business points of contact.&lt;/li&gt;&lt;li&gt;Names of all your team members&lt;/li&gt;&lt;li&gt;Technical description outlining the proposed technology&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;NAICS code of your business&lt;/li&gt;&lt;li&gt;Estimated amount of funding&lt;/li&gt;&lt;/ul&gt;</text>
+        <text
+    >&lt;ul&gt;&lt;li&gt;Concept paper with the following requirements:&lt;ul&gt;&lt;li&gt;Contact information for your technical and business points of contact.&lt;/li&gt;&lt;li&gt;Names of all your team members&lt;/li&gt;&lt;li&gt;Technical description outlining the proposed technology&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;NAICS code of your business&lt;/li&gt;&lt;li&gt;Estimated amount of funding&lt;/li&gt;&lt;/ul&gt;</text>
     </textTemplates>
     <textTemplates>
         <description>Body for a full application confirmation.</description>
         <name>full_application_email_body</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;This is a confirmation email to let you know we have received your application.&lt;/p&gt;&lt;p&gt;Our team will look over your application as soon as we can and get back to you with &lt;/p&gt;&lt;p&gt;any follow up and confirmation on our decision soon.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Thank you for your patience.&lt;/p&gt;</text>
+        <text
+    >&lt;p&gt;This is a confirmation email to let you know we have received your application.&lt;/p&gt;&lt;p&gt;Our team will look over your application as soon as we can and get back to you with &lt;/p&gt;&lt;p&gt;any follow up and confirmation on our decision soon.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Thank you for your patience.&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
-        <description>Welcome text for the full application first screen.</description>
+        <description
+    >Welcome text for the full application first screen.</description>
         <name>full_application_welcome_text_required_items</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;ul&gt;&lt;li&gt;Technical Volume&lt;/li&gt;&lt;li&gt;Project Summary&lt;/li&gt;&lt;li&gt;Budget Justification&lt;/li&gt;&lt;li&gt;NAICS code of your business&lt;/li&gt;&lt;li&gt;Estimated amount of funding&lt;/li&gt;&lt;/ul&gt;</text>
+        <text
+    >&lt;ul&gt;&lt;li&gt;Technical Volume&lt;/li&gt;&lt;li&gt;Project Summary&lt;/li&gt;&lt;li&gt;Budget Justification&lt;/li&gt;&lt;li&gt;NAICS code of your business&lt;/li&gt;&lt;li&gt;Estimated amount of funding&lt;/li&gt;&lt;/ul&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>proceed_text</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;If you have all of the materials you may proceed to the next step.&lt;/p&gt;</text>
+        <text
+    >&lt;p&gt;If you have all of the materials you may proceed to the next step.&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
-        <description>Welcome text to greet at the start of the application.</description>
+        <description
+    >Welcome text to greet at the start of the application.</description>
         <name>welcome_text_greeting</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Welcome to the Office of Energy Efficiency and Renewable Energy (EERE) funding application!&lt;/p&gt;&lt;p&gt;Before you begin, here is a list of materials you should have ready before start:&lt;/p&gt;</text>
+        <text
+    >&lt;p&gt;Welcome to the Office of Energy Efficiency and Renewable Energy (EERE) funding application!&lt;/p&gt;&lt;p&gt;Before you begin, here is a list of materials you should have ready before start:&lt;/p&gt;</text>
     </textTemplates>
     <variables>
         <description>Stores the applicant&apos;s lead record</description>
@@ -1435,7 +1540,8 @@
         <objectType>Lead</objectType>
     </variables>
     <variables>
-        <description>Holds the applicant&apos;s record id. Comes from existing lead or contact</description>
+        <description
+    >Holds the applicant&apos;s record id. Comes from existing lead or contact</description>
         <name>applicant_record_id</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
@@ -1443,7 +1549,8 @@
         <isOutput>false</isOutput>
     </variables>
     <variables>
-        <description>Document link collection to hold uploaded file records before creation.</description>
+        <description
+    >Document link collection to hold uploaded file records before creation.</description>
         <name>file_document_links</name>
         <dataType>SObject</dataType>
         <isCollection>true</isCollection>
@@ -1452,7 +1559,8 @@
         <objectType>ContentDocumentLink</objectType>
     </variables>
     <variables>
-        <description>Variable to hold temporary file content document link</description>
+        <description
+    >Variable to hold temporary file content document link</description>
         <name>file_temp_record_var</name>
         <dataType>SObject</dataType>
         <isCollection>false</isCollection>
@@ -1469,7 +1577,8 @@
         <isOutput>false</isOutput>
     </variables>
     <variables>
-        <description>Picklist value for the selected region from business information screen.</description>
+        <description
+    >Picklist value for the selected region from business information screen.</description>
         <name>region_picklist_value</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
@@ -1477,7 +1586,8 @@
         <isOutput>false</isOutput>
     </variables>
     <variables>
-        <description>Picklist value for the selected state from the business information screen.</description>
+        <description
+    >Picklist value for the selected state from the business information screen.</description>
         <name>state_picklist_value</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
