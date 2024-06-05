@@ -1,0 +1,61 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Contact Us",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"99dc28cb-100b-4976-a6d4-2c859d226f61\",\"columns\":[{\"UUID\":\"60c059d9-b468-4bea-bcbb-c66215c6eb5d\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:webToLeadForm",
+              "id" : "0e391f9b-9292-4891-bf3c-4784f0643491",
+              "type" : "component"
+            } ],
+            "id" : "60c059d9-b468-4bea-bcbb-c66215c6eb5d",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "99dc28cb-100b-4976-a6d4-2c859d226f61",
+          "type" : "component"
+        } ],
+        "id" : "dcbc5eae-d373-4a24-bb31-9c8c5e2ded2a",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Contact Us",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "b9c8efa0-1b07-476d-9b3d-c326dde280b7",
+          "type" : "component"
+        } ],
+        "id" : "17201754-5134-4628-b645-65e8a7436af4",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "50122d45-c2b5-4c61-86fb-a492b66eac37",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-contact-us"
+  }
+}

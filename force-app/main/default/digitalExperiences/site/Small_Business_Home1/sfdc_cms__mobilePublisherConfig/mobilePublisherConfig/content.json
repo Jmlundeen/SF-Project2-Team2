@@ -2,9 +2,32 @@
   "type" : "sfdc_cms__mobilePublisherConfig",
   "title" : "Mobile Publisher Content",
   "contentBody" : {
+    "mobilePublisherAppUpdateConfig" : {
+      "forceAppUpdate" : false,
+      "enableAppUpdate" : false,
+      "minVersion" : {
+        "ios" : {
+          "version" : "10.0",
+          "url" : "https://apps.apple.com/us"
+        },
+        "android" : {
+          "version" : "10.1",
+          "url" : "https://play.google.com/store"
+        }
+      }
+    },
+    "nativeMobileNavConfig" : {
+      "ios" : {
+        "showBackButton" : true,
+        "showHamburgerMenuWithBackButton" : false
+      },
+      "global" : {
+        "showHamburgerMenu" : true
+      }
+    },
     "nativeTabMenu" : {
       "branding" : {
-        "iconTintColor" : "#0B5CAB",
+        "iconTintColor" : "#000000",
         "iconTintColorUnselected" : "#C9C9C9",
         "barTintColor" : "#FFFFFF"
       },
@@ -18,29 +41,6 @@
           }
         }
       } ]
-    },
-    "nativeMobileNavConfig" : {
-      "global" : {
-        "showHamburgerMenu" : true
-      },
-      "ios" : {
-        "showBackButton" : true,
-        "showHamburgerMenuWithBackButton" : false
-      }
-    },
-    "mobilePublisherAppUpdateConfig" : {
-      "enableAppUpdate" : false,
-      "forceAppUpdate" : false,
-      "minVersion" : {
-        "ios" : {
-          "url" : "https://apps.apple.com/us",
-          "version" : "10.0"
-        },
-        "android" : {
-          "url" : "https://play.google.com/store",
-          "version" : "10.1"
-        }
-      }
     }
   }
 }
