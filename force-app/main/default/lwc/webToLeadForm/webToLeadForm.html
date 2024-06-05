@@ -1,3 +1,137 @@
+<!-- sldsValidatorIgnore -->
 <template>
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+    <!--  If necessary, please modify the charset parameter to specify the        -->
+    <!--  character set of your HTML page.                                        -->
+    <!--  ----------------------------------------------------------------------  -->
+
+    <!--<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">-->
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <FORM> element to your page.             -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Dbm000003kF4R" method="POST">
+    <!-- sldsValidatorIgnoreNextLine -->
+    
+    <input type=hidden name="oid" value="00Dbm000003kF4R">
+    <input type=hidden name="retURL" value="https://customization-momentum-583-dev-ed.scratch.my.site.com/">
+    
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+    <!--  these lines if you wish to test in debug mode.                          -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail"                                  -->
+    <!--  value="eere-no-reply@proton.me">                                        -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+    
+    <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+    
+    <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+    
+    <label for="industry">Industry</label><select  id="industry" name="industry"><option value="">--None--</option><option value="Agriculture">Agriculture</option>
+    <option value="Apparel">Apparel</option>
+    <option value="Banking">Banking</option>
+    <option value="Biotechnology">Biotechnology</option>
+    <option value="Chemicals">Chemicals</option>
+    <option value="Communications">Communications</option>
+    <option value="Construction">Construction</option>
+    <option value="Consulting">Consulting</option>
+    <option value="Education">Education</option>
+    <option value="Electronics">Electronics</option>
+    <option value="Energy">Energy</option>
+    <option value="Engineering">Engineering</option>
+    <option value="Entertainment">Entertainment</option>
+    <option value="Environmental">Environmental</option>
+    <option value="Finance">Finance</option>
+    <option value="Food &amp; Beverage">Food &amp; Beverage</option>
+    <option value="Government">Government</option>
+    <option value="Healthcare">Healthcare</option>
+    <option value="Hospitality">Hospitality</option>
+    <option value="Insurance">Insurance</option>
+    <option value="Machinery">Machinery</option>
+    <option value="Manufacturing">Manufacturing</option>
+    <option value="Media">Media</option>
+    <option value="Not For Profit">Not For Profit</option>
+    <option value="Recreation">Recreation</option>
+    <option value="Retail">Retail</option>
+    <option value="Shipping">Shipping</option>
+    <option value="Technology">Technology</option>
+    <option value="Telecommunications">Telecommunications</option>
+    <option value="Transportation">Transportation</option>
+    <option value="Utilities">Utilities</option>
+    <option value="Other">Other</option>
+    </select><br>
+    
+    <label for="revenue">Annual Revenue</label><input  id="revenue" name="revenue" size="20" type="text" /><br>
+    
+    <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+    
+    <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+    
+    <label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+    
+    State:<select  id="00Nbm000001XUIT" name="00Nbm000001XUIT" title="State"><option value="">--None--</option><option value="Illinois">Illinois</option>
+    <option value="Indiana">Indiana</option>
+    <option value="Iowa">Iowa</option>
+    <option value="Michigan">Michigan</option>
+    <option value="Minnesota">Minnesota</option>
+    <option value="Ohio">Ohio</option>
+    <option value="Wisconsin">Wisconsin</option>
+    <option value="Connecticut">Connecticut</option>
+    <option value="Delaware">Delaware</option>
+    <option value="Maine">Maine</option>
+    <option value="Maryland">Maryland</option>
+    <option value="Massachusetts">Massachusetts</option>
+    <option value="New Hampshire">New Hampshire</option>
+    <option value="New Jersey">New Jersey</option>
+    <option value="New York">New York</option>
+    <option value="Pennsylvania">Pennsylvania</option>
+    <option value="Rhode Island">Rhode Island</option>
+    <option value="Vermont">Vermont</option>
+    <option value="Alaska">Alaska</option>
+    <option value="Hawaii">Hawaii</option>
+    <option value="Idaho">Idaho</option>
+    <option value="Oregon">Oregon</option>
+    <option value="Montana">Montana</option>
+    <option value="Washington">Washington</option>
+    <option value="Alabama">Alabama</option>
+    <option value="Arkansas">Arkansas</option>
+    <option value="District of Columbia">District of Columbia</option>
+    <option value="Florida">Florida</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Kentucky">Kentucky</option>
+    <option value="Louisiana">Louisiana</option>
+    <option value="Mississippi">Mississippi</option>
+    <option value="Missouri">Missouri</option>
+    <option value="North Carolina">North Carolina</option>
+    <option value="Puerto Rico">Puerto Rico</option>
+    <option value="South Carolina">South Carolina</option>
+    <option value="Tennessee">Tennessee</option>
+    <option value="Virgin Islands">Virgin Islands</option>
+    <option value="Virginia">Virginia</option>
+    <option value="West Virginia">West Virginia</option>
+    <option value="Arizona">Arizona</option>
+    <option value="California">California</option>
+    <option value="Colorado">Colorado</option>
+    <option value="Kansas">Kansas</option>
+    <option value="Nebraska">Nebraska</option>
+    <option value="Nevada">Nevada</option>
+    <option value="New Mexico">New Mexico</option>
+    <option value="North Dakota">North Dakota</option>
+    <option value="Oklahoma">Oklahoma</option>
+    <option value="South Dakota">South Dakota</option>
+    <option value="Texas">Texas</option>
+    <option value="Utah">Utah</option>
+    <option value="Wyoming">Wyoming</option>
+    </select><br>
+    
+    <input type="submit" name="submit">
+    
+    </form>
+    
     
 </template>

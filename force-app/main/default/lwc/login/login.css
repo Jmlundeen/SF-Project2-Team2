@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+    font-size: 24pt;
+}
+button{
+    background-color: #14452f;
+    border-radius: 50px;
+    color: white;
+    width: 75%;
+}

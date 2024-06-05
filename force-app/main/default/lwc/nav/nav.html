@@ -1,36 +1,67 @@
+<!-- sldsValidatorIgnore -->
+<!-- sldsValidatorIgnore -->
 <template>
     <div class="navBar">
-        <lightning-layout horizontal-align="space">
-            <lightning-layout-item padding="around-small">
-                <img src={logoUrl} alt="EERE logo">
-            </lightning-layout-item>
-            <lightning-layout-item padding="around-small">
-                <a href="">Home</a>
-            </lightning-layout-item>
-            <lightning-layout-item padding="around-small">
-                <a href="">About EERE</a>
-            </lightning-layout-item>
-            <lightning-layout-item padding="around-small">
-                <a href="">Resources</a>
-            </lightning-layout-item>
-            <lightning-layout-item padding="around-small">
-                <a href="">Buildings &amp; industry</a>
-            </lightning-layout-item>
-            <lightning-layout-item padding="around-small">
-                <lightning-button-menu class="button" label="More" alternative-text="More">
-                    <lightning-menu-item value="Item1" label="Renewable Energy"></lightning-menu-item>
-                    <lightning-menu-divider variant="compact"></lightning-menu-divider>
-                    <lightning-menu-item value="Item2" label="Sustainable Transportation"></lightning-menu-item>
-                    <lightning-menu-divider variant="compact"></lightning-menu-divider>
-                    <a href=""><lightning-menu-item value="Item3" label="Contact Us"></lightning-menu-item></a>
-                </lightning-button-menu> 
-            </lightning-layout-item>
-            <lightning-layout-item padding="around-small">
+        <nav class="slds-context-bar__primary" role="navigation">
+            <ul class="slds-grid">
+              <li class="slds-context-bar__item">
+                <img src={logoUrl} alt="EERE Logo">
+              </li>
+              <li class="slds-context-bar__item">
+                <a href="" class="slds-context-bar__label-action">Home</a>
+              </li>
+              <li class="slds-context-bar__item">
+                <a href="" class="slds-context-bar__label-action">About EERE</a>
+              </li>
+              <li class="slds-context-bar__item">
+                <a href="#" class="slds-context-bar__label-action">Resources</a>
+              </li>
+              <li class="slds-context-bar__item">
+                <a href="#" class="slds-context-bar__label-action">Buildings &amp; Industry</a>
+              </li>
+              <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click">
+                <a href="#" class="slds-context-bar__label-action" title="More">
+                  <span class="slds-truncate" title="More">More</span>
+                </a>
+                <div class="slds-context-bar__icon-action slds-p-left_none">
+                  <button class="slds-button slds-button_icon slds-button_icon slds-context-bar__button" aria-haspopup="true" title="Open menu item submenu">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Open menu item submenu</span>
+                  </button>
+                </div>
+                <div class="slds-dropdown slds-dropdown_right">
+                    <ul class="slds-dropdown__list" role="menu">
+                      <li class="slds-dropdown__item" role="presentation">
+                        <a href="#" role="menuitem" tabindex="-1">
+                          <span class="slds-truncate" title="Renewable">Renewable Energy</span>
+                        </a>
+                      </li>
+                      <li class="slds-dropdown__item" role="presentation">
+                        <a href="#" role="menuitem" tabindex="-1">
+                          <span class="slds-truncate" title="Sustainable">Sustainable Transport</span>
+                        </a>
+                      </li>
+                      <li class="slds-dropdown__item" role="presentation">
+                        <a href="#" role="menuitem" tabindex="-1">
+                          <span class="slds-truncate" title="Contact">Contact Us</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+              </li>
+            </ul>
+          </nav>
+          <nav class="slds-context-bar__secondary" role="navigation">
+            <ul class="slds-grid">
+              <li class="slds-context-bar__item">
                 <c-search-bar></c-search-bar>
-            </lightning-layout-item>
-            <lightning-layout-item padding="around-small">
-                <lightning-button class="button" label="Login"></lightning-button>
-            </lightning-layout-item>
-        </lightning-layout>   
+              </li>
+              <li class="slds-context-bar__item">
+                <a href="" class="slds-context-bar__label-action">Login</a>
+              </li>
+            </ul>
+          </nav>
     </div>  
 </template>
