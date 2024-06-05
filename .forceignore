@@ -8,5 +8,8 @@ package.xml
 **/jsconfig.json
 **/.eslintrc.json
 
+# prm dashboards and reports
+**/prm_channel*
+
 # LWC Jest
 **/__tests__/**
