@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Hello&nbsp;{{{Recipient.FirstName}}},<br />
+&nbsp;
+<p>Thank you for your recent application submission.</p>
+
+<p>We are pleased to inform you that your application has progressed to the negotiation stage for the funding opportunity you applied for. The contracting officer assigned to your application will be in touch shortly to schedule a meeting.</p>
+
+<p>Your active participation in our program is greatly appreciated.</p>
+
+<p>Best regards,</p>
+
+<p>{{{Organization.Name}}} Small Business Program</p>
+</body>
+</html>

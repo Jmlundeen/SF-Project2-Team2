@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Great Lakes Application Queue</name>
+    <queueMembers>
+        <roleAndSubordinatesInternal>
+            <roleAndSubordinateInternal>Illinois_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Indiana_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Iowa_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Michigan_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Minnesota_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Ohio_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Wisconsin_Sales_Manager</roleAndSubordinateInternal>
+        </roleAndSubordinatesInternal>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

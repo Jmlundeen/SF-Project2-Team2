@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wester_Application_Queue_Lead</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Queue</filterScope>
+    <label>Western Application Queue</label>
+    <queue>Western_Application_Queue</queue>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Director_of_Arizona_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_California_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Colorado_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Kansas_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Nebraska_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Nevada_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_New_Mexico_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_North_Dakota_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Oklahoma_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_South_Dakota_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Texas_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Utah_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Wyoming_Sales</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Southern Application Queue</name>
+    <queueMembers>
+        <roleAndSubordinatesInternal>
+            <roleAndSubordinateInternal>Alabama_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Arkansas_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>District_of_Columbia_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Florida_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Georgia_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Kentucky_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Louisiana_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Mississippi_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Missouri_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>North_Carolina_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Puerto_Rico_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>South_Carolina_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Tennessee_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Virgin_Islands_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Virginia_Sales_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>West_Virginia_Sales_Manager</roleAndSubordinateInternal>
+        </roleAndSubordinatesInternal>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

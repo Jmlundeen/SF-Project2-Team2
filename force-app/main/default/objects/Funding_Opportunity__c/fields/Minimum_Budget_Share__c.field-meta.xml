@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minimum_Budget_Share__c</fullName>
+    <description>Minimum budget share allowed for the project.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The minimum percentage of the budget that a company must be willing to put in as their share.</inlineHelpText>
+    <label>Minimum Budget Share</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

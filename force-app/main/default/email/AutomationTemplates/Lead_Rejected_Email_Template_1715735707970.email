@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Hello&nbsp;{{{Recipient.FirstName}}},<br />
+&nbsp;
+<p>Thank you for your recent application submission.</p>
+
+<p>After careful consideration, we regret to inform you that your application has not been selected to proceed to the next stage for the funding opportunity you applied for.</p>
+
+<p>We appreciate the time and effort you invested in your application and encourage you to consider future opportunities with us.</p>
+
+<p>Thank you for your interest in our program.</p>
+
+<p>Best regards,</p>
+
+<p>{{{Organization.Name}}} Small Business Program</p>
+</body>
+</html>

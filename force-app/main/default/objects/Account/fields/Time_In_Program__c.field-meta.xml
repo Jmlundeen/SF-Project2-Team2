@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_In_Program__c</fullName>
+    <description>Days since the company has enrolled in the program</description>
+    <externalId>false</externalId>
+    <formula>TEXT(TODAY() - Enrollment_Date__c) + &quot; Days&quot;</formula>
+    <inlineHelpText>Days since the company has enrolled in the program</inlineHelpText>
+    <label>Time In Program</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

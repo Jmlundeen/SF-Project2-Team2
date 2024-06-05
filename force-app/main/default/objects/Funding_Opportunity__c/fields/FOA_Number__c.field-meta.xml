@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FOA_Number__c</fullName>
+    <description>FOA Number for available funding opportunities</description>
+    <displayFormat>DE-FOA-{00000000}</displayFormat>
+    <externalId>false</externalId>
+    <label>FOA Number</label>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

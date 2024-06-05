@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pacific_Application_Queue_Lead</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Queue</filterScope>
+    <label>Pacific Application Queue</label>
+    <queue>Pacific_Application_Queue</queue>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Director_of_Alaska_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Hawaii_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Idaho_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Montana_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Oregon_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Director_of_Washington_Sales</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>
