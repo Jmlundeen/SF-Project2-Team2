@@ -1,7 +1,7 @@
-img{
-    width: 150px;
-    height: 75px;
-}
 .button{
     border-radius: 50px;
+}
+.navBar a{
+    color: black;
+    text-decoration: none;
 }

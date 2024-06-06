@@ -1,7 +1,7 @@
 <template>
     <lightning-modal-header label="Progress Report"></lightning-modal-header>
     <lightning-modal-body> 
-        <form action="" method="GET">
+        <form action="" method="POST">
             <lightning-input type="text" label="Author:" name="author"></lightning-input>
             <lightning-input type="text" label="Progress Report Name:" name="report"></lightning-input>
             <lightning-input type="text" label="Project Manager:" name="project_manager"></lightning-input>
@@ -13,6 +13,6 @@
         </form>
     </lightning-modal-body>
     <lightning-modal-footer>
-        <lightning-button type="submit" label="submit" onclick={handleOkay}></lightning-button>
+        <lightning-button type="submit" label="submit" onclick={handleSubmit}></lightning-button>
     </lightning-modal-footer>
 </template>
