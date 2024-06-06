@@ -31,7 +31,7 @@ public without sharing class LoginHandler {
 
             // User exists and active, login.
             System.PageReference redirectPage = Site.login( 
-                userName, password, ''
+                userName, password, 'google.com'
             );
             return 1;
 
