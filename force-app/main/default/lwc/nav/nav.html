@@ -17,7 +17,7 @@
                 <a href="#" class="slds-context-bar__label-action">Resources</a>
               </li>
               <li class="slds-context-bar__item">
-                <a href="#" class="slds-context-bar__label-action">Buildings &amp; Industry</a>
+                <lightning-button variant="bare" label="Buildings &amp; Industry" onclick={navigateToContact}></lightning-button> 
               </li>
               <li>
                 <lightning-button-menu label="More" variant="bare">
@@ -26,7 +26,7 @@
                   <lightning-menu-item 
                       value="Contact"  
                       label="Contact Us" 
-                      href={navigateToContact}
+                      onclick={navigateToContact}
                   > 
                   </lightning-menu-item>
                 </lightning-button-menu>

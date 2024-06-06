@@ -3,27 +3,28 @@ import IMAGES from '@salesforce/resourceUrl/Images';
 import { NavigationMixin } from 'lightning/navigation';
 
 export default class Nav extends NavigationMixin(LightningElement) {
+
     logoUrl = IMAGES + '/EERE.png';
 
     navigateToHome() {
         this[NavigationMixin.Navigate]({
-            type: 'standard__namedPage',
+            type: 'comm__namedPage',
             attributes: {
-                pageName: 'Home'
+                name: 'Home'
             }
         });
-    }
+    }n
 
     navigateToContact() {
         this[NavigationMixin.Navigate]({
             type: 'comm__namedPage',
             attributes: {
-                name: 'Contact_Us__C'
+                name: 'Contact_Us__c'
             }
         });
     }
 
-    navigatetoLogin(){
+    navigateToLogin(){
         this[NavigationMixin.Navigate]({
             type: 'comm__namedPage',
             attributes: {
