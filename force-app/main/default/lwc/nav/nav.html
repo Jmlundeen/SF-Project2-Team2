@@ -8,10 +8,10 @@
                 <img src={logoUrl} alt="EERE Logo">
               </li>
               <li class="slds-context-bar__item">
-                <a href="" class="slds-context-bar__label-action">Home</a>
+                <a href={navigateToHome} class="slds-context-bar__label-action">Home</a>
               </li>
               <li class="slds-context-bar__item">
-                <a href="" class="slds-context-bar__label-action">About EERE</a>
+                <a href={navigateToHome} class="slds-context-bar__label-action">About EERE</a>
               </li>
               <li class="slds-context-bar__item">
                 <a href="#" class="slds-context-bar__label-action">Resources</a>
@@ -19,37 +19,17 @@
               <li class="slds-context-bar__item">
                 <a href="#" class="slds-context-bar__label-action">Buildings &amp; Industry</a>
               </li>
-              <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click">
-                <a href="#" class="slds-context-bar__label-action" title="More">
-                  <span class="slds-truncate" title="More">More</span>
-                </a>
-                <div class="slds-context-bar__icon-action slds-p-left_none">
-                  <button class="slds-button slds-button_icon slds-button_icon slds-context-bar__button" aria-haspopup="true" title="Open menu item submenu">
-                    <svg class="slds-button__icon" aria-hidden="true">
-                      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
-                    </svg>
-                    <span class="slds-assistive-text">Open menu item submenu</span>
-                  </button>
-                </div>
-                <div class="slds-dropdown slds-dropdown_right">
-                    <ul class="slds-dropdown__list" role="menu">
-                      <li class="slds-dropdown__item" role="presentation">
-                        <a href="#" role="menuitem" tabindex="-1">
-                          <span class="slds-truncate" title="Renewable">Renewable Energy</span>
-                        </a>
-                      </li>
-                      <li class="slds-dropdown__item" role="presentation">
-                        <a href="#" role="menuitem" tabindex="-1">
-                          <span class="slds-truncate" title="Sustainable">Sustainable Transport</span>
-                        </a>
-                      </li>
-                      <li class="slds-dropdown__item" role="presentation">
-                        <a href="#" role="menuitem" tabindex="-1">
-                          <span class="slds-truncate" title="Contact">Contact Us</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+              <li>
+                <lightning-button-menu label="More" variant="bare">
+                  <lightning-menu-item value="Renewable" label="Renewable Energy"></lightning-menu-item>
+                  <lightning-menu-item value="Sustainable" label="Sustainable Transport"></lightning-menu-item>
+                  <lightning-menu-item 
+                      value="Contact"  
+                      label="Contact Us" 
+                      href={navigateToContact}
+                  > 
+                  </lightning-menu-item>
+                </lightning-button-menu>
               </li>
             </ul>
             <div class="slds-context-bar__secondary" role="navigation">
@@ -58,7 +38,7 @@
                   <c-search-bar></c-search-bar>
                 </li>
                 <li class="slds-context-bar__item">
-                  <a href="" class="slds-context-bar__label-action">Login</a>
+                  <a href={navigateToLogin} class="slds-context-bar__label-action">Login</a>
                 </li>
               </ul>
             </div>
