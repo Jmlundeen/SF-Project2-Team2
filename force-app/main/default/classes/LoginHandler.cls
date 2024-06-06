@@ -1,7 +1,7 @@
 public without sharing class LoginHandler {
 
     @AuraEnabled( cacheable=true )
-    public static Integer getUserByUserName( String userName, String password ){
+    public static Integer getUser( String userName, String password ){
         /**
          * This function checks if the user exists w/in the SF DB.
          * If user doesn't exist, return -1.

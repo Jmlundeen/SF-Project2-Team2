@@ -1,38 +1,62 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, wire } from 'lwc';
+import getUser from '@salesforce/apex/LoginHandler.getUser';
 
 export default class Login extends LightningElement {
     errorMessage;
-    userEmail;
+    tempUserName;
+    tempPassword;
+
+    // Reactive vars.
+    userName;
     userPassword;
 
     emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    @wire( getUser, {
+        userName: '$userName', password: '$tempPassword'
+    })
+    verifyLogin( {data, error} ){
+        if( data ){
+            // ***TEST*** //
+            console.log( data );
+        }
+        else if( error ){
+            this.errorMessage = error.body.message;
+
+            // ***TEST*** //
+            console.log( error.body.message );
+        }
+    }
     
     handleUsernameOnChange( event ) {
-        this.userEmail = event.target.value;
+        this.tempUserName = event.target.value;
     }
 
     handlePasswordOnChange( event ){
-        this.userPassword = event.target.value;
+        this.tempPassword = event.target.value;
     }
 
     handleSubmit( event ) {
         event.preventDefault();
 
         // Validate email address.
-        if( !this.isValidEmail( this.userEmail ) ){
+        if( !this.isValidEmail( this.tempUserName ) ){
             this.errorMessage = 'Error: Invalid Email Address!';
             console.log( this.errorMessage );
             return;
         }
         
         // Validate password.
-        if( !this.isValidPassword( this.userPassword ) ){
+        if( !this.isValidPassword( this.tempPassword ) ){
             this.errorMessage = 'Error: Password must not be empty!!!';
             console.log( this.errorMessage );
             return;
         }
 
         this.errorMessage = null;
+        this.userName     = this.tempUserName;
+        this.userPassword = this.tempPassword;
+
     }
 
 
