@@ -7,8 +7,8 @@
         "children" : [ {
           "attributes" : {
             "backgroundImageConfig" : "",
-            "backgroundImageOverlay" : "rgba(0,0,0,0)",
-            "componentSpacerSize" : "",
+            "backgroundImageOverlay" : "rgba(0, 0, 0, 0)",
+            "componentSpacerSize" : "0rem",
             "maxContentWidth" : "",
             "sectionColumnGutterWidth" : "",
             "sectionConfig" : "{\"UUID\":\"9e9d23a6-7c3b-49ef-b853-ddff7276e11b\",\"columns\":[{\"UUID\":\"466b5b89-d99b-40a5-8752-05cc1a3b4a12\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
@@ -40,14 +40,28 @@
           "type" : "component"
         }, {
           "attributes" : {
-            "backgroundImageConfig" : "",
+            "backgroundImageConfig" : "{\"url\":\"/sfsites/c/cms/delivery/media/MCWWZFNGTUJZHU3CBS4B6UQNCHPI?lastModifiedDate=Wed Jun 05 04:58:46 GMT 2024&height=144&width=192\",\"contentKey\":\"MCWWZFNGTUJZHU3CBS4B6UQNCHPI\",\"altText\":\"\",\"contentType\":\"sfdc_cms__image\",\"bgPosition\":\"center center\",\"bgSizeOrRepeat\":\"/cover\"}",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
             "componentSpacerSize" : "",
+            "dxpStyle" : {
+              "padding" : {
+                "bottom" : "",
+                "left" : "",
+                "right" : "",
+                "top" : "700px"
+              }
+            },
             "maxContentWidth" : "",
             "sectionColumnGutterWidth" : "",
             "sectionConfig" : "{\"UUID\":\"372f7bbc-759f-4bb9-99cb-7a532f9551db\",\"columns\":[{\"UUID\":\"7fb478cd-fc92-4ea3-b497-0c879774bc2d\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
           },
           "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:hero",
+              "id" : "1c95174c-cf11-4a76-9f9c-0d1cef3d77bf",
+              "type" : "component"
+            } ],
             "id" : "7fb478cd-fc92-4ea3-b497-0c879774bc2d",
             "name" : "col1",
             "title" : "Column 1",
@@ -55,6 +69,30 @@
           } ],
           "definition" : "community_layout:section",
           "id" : "372f7bbc-759f-4bb9-99cb-7a532f9551db",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"3298c73d-ced5-4efc-bc9a-8437840a5ce1\",\"columns\":[{\"UUID\":\"a5d020f8-cf3d-461a-8587-4c810051e56d\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:detailsSection",
+              "id" : "f1f4a713-d35b-421a-934c-1cb6790f857c",
+              "type" : "component"
+            } ],
+            "id" : "a5d020f8-cf3d-461a-8587-4c810051e56d",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "3298c73d-ced5-4efc-bc9a-8437840a5ce1",
           "type" : "component"
         }, {
           "attributes" : {
@@ -79,6 +117,30 @@
           } ],
           "definition" : "community_layout:section",
           "id" : "0df2b9ce-7ff0-4a52-a37f-e0f4ad014cfe",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"17f3b8f5-3919-49e2-939b-13f309c30a62\",\"columns\":[{\"UUID\":\"4a0615ed-2a56-4924-9da4-a942adfff72b\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:resourceSection",
+              "id" : "40c3ed4f-2de5-4e30-aeaa-06ec56218df3",
+              "type" : "component"
+            } ],
+            "id" : "4a0615ed-2a56-4924-9da4-a942adfff72b",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "17f3b8f5-3919-49e2-939b-13f309c30a62",
           "type" : "component"
         }, {
           "attributes" : {

@@ -30,7 +30,7 @@
           "type" : "component"
         }, {
           "attributes" : {
-            "backgroundImageConfig" : "",
+            "backgroundImageConfig" : "{\"url\":\"/sfsites/c/cms/delivery/media/MCAFEFXR6X35CZHBF7NGUJQKCF6A?lastModifiedDate=Wed Jun 05 19:54:52 GMT 2024&height=144&width=192\",\"contentKey\":\"MCAFEFXR6X35CZHBF7NGUJQKCF6A\",\"altText\":\"\",\"contentType\":\"sfdc_cms__image\",\"bgPosition\":\"center center\",\"bgSizeOrRepeat\":\"/cover\"}",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
             "componentSpacerSize" : "",
             "maxContentWidth" : "",
@@ -38,12 +38,6 @@
             "sectionConfig" : "{\"UUID\":\"527d110b-f449-43b8-bae4-d90d59b8f28f\",\"columns\":[{\"UUID\":\"9683013a-a8ec-4ed5-a3d4-b224d3839a14\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
           },
           "children" : [ {
-            "children" : [ {
-              "attributes" : { },
-              "definition" : "c:banner",
-              "id" : "45680f34-bc5e-4374-bcab-caba3104d341",
-              "type" : "component"
-            } ],
             "id" : "9683013a-a8ec-4ed5-a3d4-b224d3839a14",
             "name" : "col1",
             "title" : "Column 1",
@@ -51,6 +45,30 @@
           } ],
           "definition" : "community_layout:section",
           "id" : "527d110b-f449-43b8-bae4-d90d59b8f28f",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"cfbe482c-2c22-4d83-a1f0-221815b3d485\",\"columns\":[{\"UUID\":\"b13e4dda-a5dc-47f1-be61-255b85f441fb\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:sideNav1",
+              "id" : "91e13cd2-0de6-4895-a30a-04b8571493c1",
+              "type" : "component"
+            } ],
+            "id" : "b13e4dda-a5dc-47f1-be61-255b85f441fb",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "cfbe482c-2c22-4d83-a1f0-221815b3d485",
           "type" : "component"
         }, {
           "attributes" : {
