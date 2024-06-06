@@ -1,0 +1,65 @@
+<template>
+    <template lwc:if={isPhoneNumber}>
+        <div class="slds-form-element slds-form-element_readonly">
+            <span class="slds-form-element__label">{field}</span>
+            <div class="slds-form-element__control">
+                <div class="slds-form-element__static">
+                    <lightning-formatted-phone value={value}></lightning-formatted-phone>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template lwc:if={isEmail}>
+        <div class="slds-form-element slds-form-element_readonly">
+            <span class="slds-form-element__label">{field}</span>
+            <div class="slds-form-element__control">
+                <div class="slds-form-element__static">
+                    <lightning-formatted-email value={value}></lightning-formatted-email>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template lwc:if={isDate}>
+        <div class="slds-form-element slds-form-element_readonly">
+            <span class="slds-form-element__label">{field}</span>
+            <div class="slds-form-element__control">
+                <div class="slds-form-element__static">
+                    <lightning-formatted-date-time value={value}></lightning-formatted-date-time>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template lwc:if={isNumber}>
+        <div class="slds-form-element slds-form-element_readonly">
+            <span class="slds-form-element__label">{field}</span>
+            <div class="slds-form-element__control">
+                <div class="slds-form-element__static">
+                    <lightning-formatted-number value={value}></lightning-formatted-number>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template lwc:if={isPercent}>
+        <div class="slds-form-element slds-form-element_readonly">
+            <span class="slds-form-element__label">{field}</span>
+            <div class="slds-form-element__control">
+                <div class="slds-form-element__static">
+                    <lightning-formatted-number value={value} format-style="percent"></lightning-formatted-number>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template lwc:if={isText}>
+        <div class="slds-form-element slds-form-element_readonly">
+            <span class="slds-form-element__label">{field}</span>
+            <div class="slds-form-element__control">
+                <div class="slds-form-element__static">{value}</div>
+            </div>
+        </div>
+    </template>
+</template>

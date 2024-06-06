@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>VP_Case_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>VP Case Sharing</label>
+        <sharedTo>
+            <group>Regional_VPs</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Regional_VPs</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

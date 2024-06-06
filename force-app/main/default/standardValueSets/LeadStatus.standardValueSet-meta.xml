@@ -50,15 +50,27 @@
         <converted>false</converted>
     </standardValue>
     <standardValue>
-        <fullName>Project Performance</fullName>
-        <default>false</default>
-        <label>Project Performance</label>
-        <converted>true</converted>
-    </standardValue>
-    <standardValue>
         <fullName>Rejected</fullName>
         <default>false</default>
         <label>Rejected</label>
         <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Probation</fullName>
+        <default>false</default>
+        <label>Probation</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Deactivated</fullName>
+        <default>false</default>
+        <label>Deactivated</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Project Performance</fullName>
+        <default>false</default>
+        <label>Project Performance</label>
+        <converted>true</converted>
     </standardValue>
 </StandardValueSet>
