@@ -1,0 +1,39 @@
+<template>
+
+    <template lwc:if={errorMessage}>
+        <div>
+            {errorMessage}
+        </div>
+    </template>
+
+    <c-progress-bar></c-progress-bar>
+
+    <div>
+       <lightning-layout horizontal-align="space">
+            <lightning-layout-item size="6">
+                <lightning-card>
+                    <p>Approved Funding</p>
+                </lightning-card>
+            </lightning-layout-item>
+            <lightning-layout-item size="6">
+                <lightning-card>
+                    <p>Enrollment Date</p>
+                </lightning-card>
+            </lightning-layout-item> 
+       </lightning-layout>
+    </div>
+    <div>
+        <lightning-layout horizontal-align="space">
+             <lightning-layout-item size="6">
+                 <lightning-card>
+                     <p>Contract Length</p>
+                 </lightning-card>
+             </lightning-layout-item>
+             <lightning-layout-item size="6">
+                 <lightning-card>
+                    <p>Region</p>
+                 </lightning-card>
+             </lightning-layout-item> 
+        </lightning-layout>
+     </div>
+</template>

@@ -7,6 +7,7 @@
 .sfdx/
 .localdevserver/
 deploy-options.json
+.force-app/main/default/appMenus/AppSwitcher.appMenu-meta.xml
 
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json

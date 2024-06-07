@@ -1,0 +1,47 @@
+<!-- sldsValidatorIgnore -->
+<!-- sldsValidatorIgnore -->
+<template>
+    <div class="navBar">
+        <nav class="slds-context-bar__primary" role="navigation">
+            <ul class="slds-grid">
+              <li class="slds-context-bar__item">
+                <img src={logoUrl} alt="EERE Logo">
+              </li>
+              <li class="slds-context-bar__item">
+                <a href={navigateToHome} class="slds-context-bar__label-action">Home</a>
+              </li>
+              <li class="slds-context-bar__item">
+                <a href={navigateToHome} class="slds-context-bar__label-action">About EERE</a>
+              </li>
+              <li class="slds-context-bar__item">
+                <a href="#" class="slds-context-bar__label-action">Resources</a>
+              </li>
+              <li class="slds-context-bar__item">
+                <lightning-button variant="bare" label="Buildings &amp; Industry" onclick={navigateToContact}></lightning-button> 
+              </li>
+              <li>
+                <lightning-button-menu label="More" variant="bare">
+                  <lightning-menu-item value="Renewable" label="Renewable Energy"></lightning-menu-item>
+                  <lightning-menu-item value="Sustainable" label="Sustainable Transport"></lightning-menu-item>
+                  <lightning-menu-item 
+                      value="Contact"  
+                      label="Contact Us" 
+                      onclick={navigateToContact}
+                  > 
+                  </lightning-menu-item>
+                </lightning-button-menu>
+              </li>
+            </ul>
+            <div class="slds-context-bar__secondary" role="navigation">
+              <ul class="slds-grid">
+                <li class="slds-context-bar__item">
+                  <c-search-bar></c-search-bar>
+                </li>
+                <li class="slds-context-bar__item">
+                  <a href={navigateToLogin} class="slds-context-bar__label-action">Login</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </div>  
+</template>

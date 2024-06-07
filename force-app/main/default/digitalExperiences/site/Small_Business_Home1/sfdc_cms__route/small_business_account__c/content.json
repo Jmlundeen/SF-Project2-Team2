@@ -1,0 +1,11 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "small-business-account",
+  "contentBody" : {
+    "activeViewId" : "small_business_account",
+    "configurationTags" : [ ],
+    "pageAccess" : "RequiresLogin",
+    "routeType" : "custom-small-business-account",
+    "urlPrefix" : "small-business-account"
+  }
+}

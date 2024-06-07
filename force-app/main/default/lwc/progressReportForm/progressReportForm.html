@@ -1,0 +1,12 @@
+<template>
+    <lightning-modal-header label="Progress Report"></lightning-modal-header>
+    <lightning-modal-body> 
+        <lightning-record-form
+            object-api-name={objectApiName}
+            fields={fields}  
+            onsuccess={closeOnSuccess} 
+            oncancel={closeOnCancel}
+        >
+        </lightning-record-form>
+    </lightning-modal-body>
+</template>

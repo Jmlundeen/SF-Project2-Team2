@@ -1,0 +1,22 @@
+<template>
+    <div class="sideNav">
+        <nav class="slds-nav-vertical">
+          <div class="slds-nav-vertical__section">
+            <ul>
+              <li class="slds-nav-vertical__item slds-is-active">
+                <lightning-button label="Home" onclick={navigateToHome} class="slds-nav-vertical__action"></lightning-button>
+                </li>
+              <li class="slds-nav-vertical__item">
+                <lightning-button label="Concept Paper" onclick={handleClick}></lightning-button>
+              </li>
+              <li class="slds-nav-vertical__item">
+                <lightning-button label="Application" onclick={handleClick2}></lightning-button>
+              </li>
+              <li class="slds-nav-vertical__item">
+                <lightning-button label="Progress Report" onclick={handleClick3}></lightning-button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>    
+</template>

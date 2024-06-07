@@ -1,0 +1,151 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "small-business-account",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"3876ec71-6f05-44bb-8763-6042f9036bb7\",\"columns\":[{\"UUID\":\"8f0d8f9c-2354-47a5-a558-1cad1b25a7ee\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:acctNav",
+              "id" : "63190455-6fe8-468d-bbd6-9e48a4ea84b1",
+              "type" : "component"
+            } ],
+            "id" : "8f0d8f9c-2354-47a5-a558-1cad1b25a7ee",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "3876ec71-6f05-44bb-8763-6042f9036bb7",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "{\"url\":\"/sfsites/c/cms/delivery/media/MCAFEFXR6X35CZHBF7NGUJQKCF6A?lastModifiedDate=Wed Jun 05 19:54:52 GMT 2024&height=144&width=192\",\"contentKey\":\"MCAFEFXR6X35CZHBF7NGUJQKCF6A\",\"altText\":\"\",\"contentType\":\"sfdc_cms__image\",\"bgPosition\":\"center center\",\"bgSizeOrRepeat\":\"/cover\"}",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"527d110b-f449-43b8-bae4-d90d59b8f28f\",\"columns\":[{\"UUID\":\"9683013a-a8ec-4ed5-a3d4-b224d3839a14\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "id" : "9683013a-a8ec-4ed5-a3d4-b224d3839a14",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "527d110b-f449-43b8-bae4-d90d59b8f28f",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"cfbe482c-2c22-4d83-a1f0-221815b3d485\",\"columns\":[{\"UUID\":\"b13e4dda-a5dc-47f1-be61-255b85f441fb\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:sideNav1",
+              "id" : "91e13cd2-0de6-4895-a30a-04b8571493c1",
+              "type" : "component"
+            } ],
+            "id" : "b13e4dda-a5dc-47f1-be61-255b85f441fb",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "cfbe482c-2c22-4d83-a1f0-221815b3d485",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"fe43cef5-c3c0-45c4-a00e-000ba7f79fec\",\"columns\":[{\"UUID\":\"07321cec-f2ee-4125-b41c-baeff646cd2e\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:centerComponent",
+              "id" : "8fecf7b3-055b-4196-b448-64d11d8a6bdc",
+              "type" : "component"
+            } ],
+            "id" : "07321cec-f2ee-4125-b41c-baeff646cd2e",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "fe43cef5-c3c0-45c4-a00e-000ba7f79fec",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"bbae7495-293e-48b2-8efb-643f2ee2ec21\",\"columns\":[{\"UUID\":\"fadccd7f-4bf3-491a-8f4f-bff39c2a4fda\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:fileUpload",
+              "id" : "2a7d159e-3a28-4e09-ac60-fe2473e087bb",
+              "type" : "component"
+            } ],
+            "id" : "fadccd7f-4bf3-491a-8f4f-bff39c2a4fda",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "bbae7495-293e-48b2-8efb-643f2ee2ec21",
+          "type" : "component"
+        } ],
+        "id" : "5e554142-c20c-40ca-9ef4-e6232781fbff",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "small-business-account",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "d82a3d50-6f33-4883-9409-325b58a7af77",
+          "type" : "component"
+        } ],
+        "id" : "ee3c80bf-65d3-49dc-83cb-114bcdc8e914",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "40d5576e-06ff-4d79-add7-0cd9751d8009",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-small-business-account"
+  }
+}

@@ -1,0 +1,15 @@
+<template>
+        <div class="modal">
+            <lightning-modal-header label="EERE Small Business Application"></lightning-modal-header>
+            <lightning-modal-body>
+                <lightning-record-form
+                    object-api-name={objectApiName}
+                    fields={fields}
+                    onsuccess={closeOnSuccess}
+                    oncancel={closeOnCancel}
+                >
+                </lightning-record-form> 
+            </lightning-modal-body>
+        </div>
+    </div>   
+</template>
