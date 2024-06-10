@@ -1,4 +1,4 @@
-import { LightningElement, api } from 'lwc';
+import { api } from 'lwc';
 import LightningModal from 'lightning/modal';
 import FORM from '@salesforce/schema/Progress_Report__c';
 import ACCOUNT_FIELD from '@salesforce/schema/Progress_Report__c.Account__c';

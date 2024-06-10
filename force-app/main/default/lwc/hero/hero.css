@@ -1,3 +1,15 @@
 div{
-    background-image: url("clean-energy-header.png");
+    text-align: right;
+    margin-bottom: 250px;
+}
+h1{
+    font-size: 5rem;
+    color: #033500;
+}
+p{
+    font-size: 2rem;
+    color: #ffffff;
+}
+lightning-button{
+    background-color: #ffffff;
 }

@@ -1,7 +1,47 @@
 <template>
-    <section role="log" class="slds-chat">
-        <ul class="slds-chat-list">
-          <li class="slds-chat-listitem"></li>
+    <section role="log" class="slds-chat .slds-dropdown_length-5 chatContainer">
+        <ul class="slds-chat-list"> 
+            <li class="slds-chat-listitem slds-chat-listitem_outbound">
+                <div class="slds-chat-message">
+                    <div class="slds-chat-message__body">
+                        <div class="slds-chat-message__text slds-chat-message__text_outbound">
+                            <span>Hello, Thank you for contacting EERE Customer Support. How can I help you today?</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <template for:each={messages} for:item="msg">
+                <li key={msg.id} class="slds-chat-listitem slds-chat-listitem_inbound">
+                    <div class="slds-chat-message">
+                        <div class="slds-chat-message__body">
+                            <div class="slds-chat-message__text slds-chat-message__text_inbound">
+                                <span>{msg.content}</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </template>
+            <!-- <div class="newMsg" lwc:dom="manual"></div> -->
         </ul>
-      </section>
+    </section>
+    <div>
+        <lightning-textarea  
+          max-length="1000"
+          name="msgArea" 
+          label="" 
+          placeholder="Enter a message..."
+          value=""
+          variant="standard"
+          onchange={setMsg}
+        >
+        </lightning-textarea>
+        <span>
+            <lightning-button-icon
+            icon-name="utility:send"
+            label="send"
+            onclick={createNewMsg}
+        >
+        </lightning-button-icon>
+        </span>
+    </div>
 </template>

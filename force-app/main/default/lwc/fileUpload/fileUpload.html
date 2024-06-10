@@ -1,11 +1,37 @@
 <template>
-    <lightning-file-upload
-        label="Attach Documents"
-        name="fileUploader"
-        accept={acceptedFormats}
-        record-id={recordId}
-        onuploadfinished={handleUploadFinished}
-        multiple
-    >
-    </lightning-file-upload>
+    <lightning-tabset variant="vertical">
+        <lightning-tab label="Owned by Me">
+            <h1>"My Uploaded Files"</h1>
+            <template lwc:if={files}>
+                <div>
+                    <h3>Uploaded Files:</h3>
+                    <lightning-file-upload
+                            label="Upload Files"
+                            record-id={recordId}
+                            accept=".jpg, .jpeg, .png, .pdf, .txt, .docx"
+                            onuploadfinished={handleUploadFinished}
+                            multiple>
+                    </lightning-file-upload>
+                    <template for:each={files} for:item="file">
+                        <p key={file.url}>
+                            <a href={file.url} target="_blank">{file.name}</a>
+                        </p>
+                    </template>
+                </div>
+            </template>
+            <template lwc:else>
+                <lightning-file-upload
+                    label="Upload Files"
+                    record-id={recordId}
+                    accept=".jpg, .jpeg, .png, .pdf"
+                    onuploadfinished={handleUploadFinished}
+                    multiple>
+                </lightning-file-upload>
+            </template>  
+        </lightning-tab>
+        <lightning-tab label="Shared with Me">
+        </lightning-tab>
+        <lightning-tab label="Recent">
+        </lightning-tab>
+    </lightning-tabset>
 </template>

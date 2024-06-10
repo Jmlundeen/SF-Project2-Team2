@@ -1,0 +1,104 @@
+<template>
+    <template lwc:if={isContact}>
+        <lightning-modal-header label="How Can We Help You?"></lightning-modal-header>
+        <lightning-modal-body>
+            <lightning-card>
+                <c-contact-service-component></c-contact-service-component>
+            </lightning-card>
+        </lightning-modal-body>
+    </template>
+    <template lwc:elseif={isMessage}>
+        <lightning-modal-header label="Chat With Us"></lightning-modal-header>
+        <lightning-modal-body>
+            <lightning-card>
+                <c-message-component></c-message-component>
+            </lightning-card>
+        </lightning-modal-body>
+    </template>
+    <template lwc:elseif={isKnowledge1}>
+        <lightning-modal-header label="How do I update my account information?"></lightning-modal-header>
+        <lightning-modal-body>
+            <lightning-card>
+                <c-knowledge-component-1></c-knowledge-component-1>
+            </lightning-card>
+        </lightning-modal-body>
+    </template>
+    <template lwc:elseif={isKnowledge2}>
+        <lightning-modal-header label="<What are the features/benefits of participating in the EERE Small Business Program"></lightning-modal-header>
+        <lightning-modal-body>
+            <lightning-card>
+                <c-knowledge-component-2></c-knowledge-component-2>
+            </lightning-card>
+        </lightning-modal-body>
+    </template>
+    <template lwc:elseif={isKnowledge3}>
+        <lightning-modal-header label="How to renew your contract"></lightning-modal-header>
+        <lightning-modal-body>
+            <lightning-card>
+                <c-knowledge-component-3></c-knowledge-component-3>
+            </lightning-card>
+        </lightning-modal-body>
+    </template>
+    <template lwc:elseif={isKnowledge4}>
+        <lightning-modal-header label="What does EERE do?"></lightning-modal-header>
+        <lightning-modal-body>
+            <lightning-card>
+                <c-knowledge-component-4></c-knowledge-component-4>
+            </lightning-card>
+        </lightning-modal-body>    
+    </template>
+    <template lwc:elseif={isKnowledge5}>
+        <lightning-modal-header label="Are there any costs associated with being in the program?"></lightning-modal-header>
+        <lightning-modal-body>
+            <lightning-card>
+                <c-knowledge-component-5></c-knowledge-component-5>    
+            </lightning-card>
+        </lightning-modal-body>
+    </template>
+    <template lwc:else>
+        <lightning-modal-header label="EERE Small Business Program"></lightning-modal-header>
+        <lightning-modal-body>
+            <h1>Hello <br>How can we help?</h1>
+            <lightning-button id="contact" label="Contact Support" variant="base" onclick={showContact}></lightning-button><br>
+            <lightning-button id="message" label="Send us a message" variant="base" onclick={showMessenger}></lightning-button>
+            <lightning-card>
+                <c-search-bar></c-search-bar>
+                <lightning-button 
+                    id="know1" 
+                    label="How do I update my account info?" 
+                    variant="base" 
+                    onclick={showKnow1}
+                >
+                </lightning-button>
+                <lightning-button 
+                    id="know2" 
+                    label="What are the features/benefits of participating in the EERE Small Business Program?" 
+                    variant="base"
+                    onclick={showKnow2}
+                >
+                </lightning-button>
+                <lightning-button 
+                    id="know3" 
+                    label="How do I renew my contract?" 
+                    variant="base"
+                    onclick={showKnow3}
+                >
+                </lightning-button>
+                <lightning-button 
+                    id="know4" 
+                    label="What does EERE do?" 
+                    variant="base"
+                    onclick={showKnow4}
+                >
+                </lightning-button>
+                <lightning-button 
+                    id="know5"
+                    label="Are there any costs associated with being in the program?" 
+                    variant="base"
+                    onclick={showKnow5}
+                >
+                </lightning-button>
+            </lightning-card>
+        </lightning-modal-body>
+    </template>  
+</template>
