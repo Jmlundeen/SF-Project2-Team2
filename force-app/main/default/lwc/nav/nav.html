@@ -37,9 +37,16 @@
                 <li class="slds-context-bar__item">
                   <c-search-bar></c-search-bar>
                 </li>
-                <li class="slds-context-bar__item">
-                  <a href={navigateToLogin} class="slds-context-bar__label-action">Login</a>
+                <li lwc:if={userId} class="slds-context-bar__item">
+                  <p onclick={navigateToAccount} class="slds-context-bar__label-action">Account</p>
                 </li>
+                <li lwc:if={userId} class="slds-context-bar__item">
+                  <p onclick={logout} class="slds-context-bar__label-action">Logout</p>
+                </li>
+                <li lwc:else class="slds-context-bar__item">
+                  <p onclick={navigateToLogin} class="slds-context-bar__label-action">Login</p>
+                </li>
+
               </ul>
             </div>
           </nav>
