@@ -1,0 +1,13 @@
+<template>
+    <div class="slds-size_1-of-2 slds-align_absolute-center">
+        <lightning-card title="Self Registration">
+            <div class="slds-m-around_medium">
+                <lightning-input label="Email" name="email" onchange={handleEmailChange}></lightning-input>
+                <lightning-input label="Create Password" name="password" type="password" onchange={handlePasswordChange}></lightning-input>
+                <lightning-input label="Confirm Password" type="password" name="confirmPassword" onchange={handleConfirmPasswordChange}></lightning-input>
+                <lightning-input label="Access Code" name="accessCode" onchange={handleAccessCodeChange}></lightning-input>
+                <lightning-button label="Register" onclick={handleRegister}></lightning-button>
+            </div>
+        </lightning-card>
+    </div>
+</template>
