@@ -1,0 +1,25 @@
+<template>
+    <lightning-tabset>
+        <lightning-tab label="Upcoming">
+            <template lwc:if={hasOpenServiceAppointments}>
+                <template for:each={openServiceAppointments} for:item="appointment">
+                    <p key={appointment.Id}>{appointment.Description} - {appointment.SchedStartTime} to {appointment.SchedEndTime}</p>
+                </template>
+            </template>
+            <template lwc:else>
+                <p>You currently have no scheduled appointments.</p>
+            </template>
+        </lightning-tab>
+        <lightning-tab label="Past" title="2nd tab extended title">
+            <template lwc:if={hasClosedServiceAppointments}>
+                <template for:each={closedServiceAppointments} for:item="appointment">
+                    <p key={appointment.Id}> {appointment.Description} - {appointment.SchedStartTime} to {appointment.SchedEndTime}</p>
+                </template>
+            </template>
+            <template lwc:else>
+                <p>You have no past appointments.</p>
+            </template>
+        </lightning-tab>
+    </lightning-tabset>
+</template>
+    

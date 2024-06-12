@@ -1,3 +1,13 @@
-div {
-  background-image: url("clean-energy-header.png");
+div{
+    text-align: right;
+    margin-bottom: 250px;
 }
+h1{
+    font-size: 5rem;
+    color: #033500;
+}
+p{
+    font-size: 2rem;
+    color: #ffffff;
+}
+

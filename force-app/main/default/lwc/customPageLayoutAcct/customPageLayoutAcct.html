@@ -1,0 +1,14 @@
+<template>
+    <header data-f6-region>
+        <slot name="header">
+            <p>hello</p>
+        </slot>
+    </header>
+    <main data-f6-region>
+        <slot>
+            <section class='slds-col_padded slds-p-vertical_small'>
+                <slot name="sidebar"></slot>
+            </section>
+        </slot>
+    </main>
+</template>

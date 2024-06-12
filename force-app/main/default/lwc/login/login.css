@@ -1,11 +1,22 @@
-h1 {
-  text-align: center;
-  font-size: 24pt;
+h1{
+    text-align: center;
+    font-size: 24pt;
 }
-/*button{
-    background-color: #14452f;
-    border-radius: 50px;
-    color: white;
-    width: 75%;
+form{
+    margin-top: 50px;
 }
-*/
+lightning-input{
+    display: block;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 16pt;
+}
+.btn{
+    background-color: #033500;
+}
+.div{
+    margin-left: 75px;
+}
+a{
+    margin-left: 75px; 
+}
