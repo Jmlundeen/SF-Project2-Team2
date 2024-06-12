@@ -29,23 +29,25 @@ input[type=text], select{
     text-align: center;
 }
 
-input{
+input, select{
     margin: 10px;
 }
 
 input[type=submit]{
     margin: 10px;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: #010101;
     color: #ffffff;
     font-size: 15px;
     text-align: center;
-    padding: 0 50px;
+    padding: 10px 30px;
+    margin-left: 100px;
 }
 
 img{
     width: 35%;
     height: 35%;
+    margin-left: 75px;
 }
 label, p{
     font-size: medium;
