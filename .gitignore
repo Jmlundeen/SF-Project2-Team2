@@ -9,6 +9,9 @@
 deploy-options.json
 .force-app/main/default/appMenus/AppSwitcher.appMenu-meta.xml
 
+# vscode Settings.
+.vscode/
+
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
 

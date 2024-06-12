@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
@@ -156,13 +156,13 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Funding Opportunity</label>
     <nameField>
+        <displayFormat>DE-FOA-{00000000}</displayFormat>
         <label>Funding Opportunity</label>
         <trackFeedHistory>false</trackFeedHistory>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Funding Opportunities</pluralLabel>
-    <searchLayouts>
-    </searchLayouts>
+    <searchLayouts></searchLayouts>
     <sharingModel>Read</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
