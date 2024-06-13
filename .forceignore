@@ -10,6 +10,8 @@ package.xml
 
 # prm dashboards and reports
 **/prm_channel*
+**/reportTypes/*
+**/profiles/*Home*
 
 # LWC Jest
 **/__tests__/**
