@@ -1,0 +1,17 @@
+<template>
+  <h2>This is Appian Endpoint Component</h2>
+  <lightning-button label="Click Me" onclick={handleClick}></lightning-button>
+  <lightning-input
+    name="searchBar"
+    placeholder="Search"
+    type="search"
+    onchange={handleOnChange}
+  ></lightning-input>
+  <lightning-datatable
+    key-field="id"
+    columns={colData}
+    data={rowData}
+    hide-checkbox-column
+  >
+  </lightning-datatable>
+</template>
