@@ -28,16 +28,17 @@
                     <c-form-element field="No. of Employees" value={applicant.NumberOfEmployees} type="number"></c-form-element>
                 </div>
             </div>
-            <div class="slds-m-around_medium slds-align_absolute-center">
-                <h2>Need to submit a concept paper or full application?</h2>
-            </div>
-            <div class="slds-m-around_medium slds-align_absolute-center">
-                <lightning-button-group class="slds-m-around-medium" >
-                    <lightning-button class="slds-button_brand" label="Concept Paper" onclick={launchConceptPaperModal}></lightning-button>
-                    <lightning-button class="slds-button_brand" label="Full Application" onclick={launchApplicationModal}></lightning-button>
-                </lightning-button-group>
-            </div>
-                
+            <template lwc:if={applicantCanSubmitApps}>
+                <div class="slds-m-around_medium slds-align_absolute-center">
+                    <h2>Need to submit a concept paper or full application?</h2>
+                </div>
+                <div class="slds-m-around_medium slds-align_absolute-center">
+                    <lightning-button-group class="slds-m-around-medium" >
+                        <lightning-button class="slds-button_brand" label="Concept Paper" onclick={launchConceptPaperModal}></lightning-button>
+                        <lightning-button class="slds-button_brand" label="Full Application" onclick={launchApplicationModal}></lightning-button>
+                    </lightning-button-group>
+                </div>
+            </template>
         </lightning-card>
     </template>
     <!-- display error message if no lead is found -->

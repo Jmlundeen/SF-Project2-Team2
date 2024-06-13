@@ -39,6 +39,11 @@ export default class ApplicantSearch extends LightningElement {
         }
     }
 
+    get applicantCanSubmitApps() {
+        return this.applicant?.Status == 'Concept Paper' || 
+                this.applicant?.Status == 'Full Application'
+    }
+
     handleEmailChange(event) {
         this.tempEmail = event.target.value;
     }
