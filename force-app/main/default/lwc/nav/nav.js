@@ -17,14 +17,14 @@ export default class Nav extends NavigationMixin(LightningElement) {
         });
     }
 
-  navigateToContact() {
-    this[NavigationMixin.Navigate]({
-      type: "comm__namedPage",
-      attributes: {
-        name: "Contact_Us__c"
-      }
-    });
-  }
+    navigateToContact() {
+        this[NavigationMixin.Navigate]({
+        type: "comm__namedPage",
+        attributes: {
+            name: "Contact_Us__c"
+        }
+        });
+    }
 
     navigateToLogin(){
         this[NavigationMixin.Navigate]({
