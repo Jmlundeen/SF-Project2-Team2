@@ -12,7 +12,10 @@ lightning-input{
     font-size: 16pt;
 }
 .btn{
-    background-color: #033500;
+    background-color: #000000;
+    color: #ffffff;
+
+    margin-left: 250px;
 }
 .div{
     margin-left: 75px;

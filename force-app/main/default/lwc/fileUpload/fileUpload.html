@@ -1,7 +1,7 @@
 <template>
     <lightning-tabset variant="vertical">
-        <lightning-tab label="Owned by Me">
-            <h1>"My Uploaded Files"</h1>
+        <lightning-tab label="Owned by Me" class="slds-theme_inverse textColor">
+            <h1>My Uploaded Files</h1>
             <template lwc:if={files}>
                 <div>
                     <h3>Uploaded Files:</h3>
@@ -29,9 +29,9 @@
                 </lightning-file-upload>
             </template>  
         </lightning-tab>
-        <lightning-tab label="Shared with Me">
+        <lightning-tab label="Shared with Me" class="slds-theme_inverse textColor">
         </lightning-tab>
-        <lightning-tab label="Recent">
+        <lightning-tab label="Recent" class="slds-theme_inverse textColor">
         </lightning-tab>
     </lightning-tabset>
 </template>

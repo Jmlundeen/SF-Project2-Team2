@@ -1,19 +1,19 @@
-footer{
+p, h1{
     color: #ffffff;
 }
 img{
-    width: 35%;
-    height: 35%;
+    width: 29%;
+    height: 29%;
 }
 .bottom{
     background-color: #000000;
 }
-.left-container{
+.leftContainer{
     background-color: #1c1c1c;
 }
-.right-container{
+.rightContainer{
     background-color: #010101;
 }
-.txt{
-    padding-left: 100px;
+.left{
+    padding-left: 75px;
 }

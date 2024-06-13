@@ -9,16 +9,14 @@
             <lightning-layout-item size="6">
                 <div class="right">
                     <h1>EERE Small Business Portal Login</h1><br><br>
-                    <form action="" method="POST">
+                    <form action="" method="GET">
                         <div class="div">
                             <lightning-input type="text" label="User Name" name="input1" onchange={handleUsernameOnChange}></lightning-input>
                             <lightning-input type="password" label="Password" name="password" onchange={handlePasswordOnChange}></lightning-input>
                             <template lwc:if={errorMessage}>
                                 <div class="slds-text-color_error">{errorMessage}</div>
                             </template>
-                            <lightning-button label="Log In" variant="brand" class="slds-m-left_x-small slds-align_absolute-center"
-                                onclick={handleSubmit}>
-                            </lightning-button>
+                            <button onclick={handleSubmit} class="btn">Log In</button>
                             <lightning-input type="checkbox" label="Remember Me" name="remember"></lightning-input> 
                         </div>
                     </form>
