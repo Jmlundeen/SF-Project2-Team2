@@ -9,13 +9,16 @@
             "backgroundImageConfig" : "",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
             "componentSpacerSize" : "",
+            "dxpStyle" : { },
             "maxContentWidth" : "",
             "sectionColumnGutterWidth" : "",
             "sectionConfig" : "{\"UUID\":\"99dc28cb-100b-4976-a6d4-2c859d226f61\",\"columns\":[{\"UUID\":\"60c059d9-b468-4bea-bcbb-c66215c6eb5d\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
           },
           "children" : [ {
             "children" : [ {
-              "attributes" : { },
+              "attributes" : {
+                "dxpStyle" : { }
+              },
               "definition" : "c:webToLeadForm",
               "id" : "0e391f9b-9292-4891-bf3c-4784f0643491",
               "type" : "component"
@@ -38,6 +41,7 @@
           "attributes" : {
             "customHeadTags" : "",
             "description" : "",
+            "dxpStyle" : { },
             "pageTitle" : "Contact Us",
             "recordId" : "{!recordId}"
           },
