@@ -1,5 +1,5 @@
 <template>
-    <lightning-tabset>
+    <lightning-tabset class="tabset">
         <lightning-tab label="Upcoming">
             <template lwc:if={hasOpenServiceAppointments}>
                 <template for:each={openServiceAppointments} for:item="appointment">

@@ -1,39 +1,36 @@
 <template>
-
     <template lwc:if={isViolation}>
         <div>
             {errorMessage}
         </div>
     </template>
 
-    <c-progress-bar></c-progress-bar>
-
-    <div>
-       <lightning-layout horizontal-align="space">
-            <lightning-layout-item size="6">
-                <lightning-card>
-                    <p>Approved Funding</p>
-                </lightning-card>
-            </lightning-layout-item>
-            <lightning-layout-item size="6">
-                <lightning-card>
-                    <p>Enrollment Date</p>
-                </lightning-card>
-            </lightning-layout-item> 
-       </lightning-layout>
+    <div class="container slds-grid slds-gutters top">
+        <div class="slds-col">
+            <h1>Approved Funding</h1>
+            <lightning-card>
+                <p></p>
+            </lightning-card>    
+        </div>
+        <div class="slds-col">
+            <h1>Enrollment Date</h1>
+            <lightning-card>
+                <p></p>
+            </lightning-card>
+        </div>
     </div>
-    <div>
-        <lightning-layout horizontal-align="space">
-             <lightning-layout-item size="6">
-                 <lightning-card>
-                     <p>Contract Length</p>
-                 </lightning-card>
-             </lightning-layout-item>
-             <lightning-layout-item size="6">
-                 <lightning-card>
-                    <p>Region</p>
-                 </lightning-card>
-             </lightning-layout-item> 
-        </lightning-layout>
-     </div>
+    <div class="container slds-grid slds-gutters bottom">
+        <div class="slds-col">
+            <h1>Contract Length</h1>
+            <lightning-card>
+                <p></p>
+            </lightning-card>
+        </div>
+        <div class="slds-col">
+            <h1>Region</h1>
+            <lightning-card>
+                <p></p>
+            </lightning-card>
+        </div>
+    </div>
 </template>

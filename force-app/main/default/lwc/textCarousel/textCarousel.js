@@ -1,3 +1,5 @@
-import { LightningElement } from 'lwc';
+import { LightningElement} from 'lwc';
 
-export default class TextCarousel extends LightningElement {}
+export default class TextCarousel extends LightningElement {
+   
+}

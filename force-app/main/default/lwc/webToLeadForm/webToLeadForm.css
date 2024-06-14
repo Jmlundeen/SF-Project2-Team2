@@ -51,6 +51,9 @@ img{
 }
 label, p{
     font-size: medium;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 10px;
+}
+.left{
+    margin-left: 15px;
 }
