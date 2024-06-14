@@ -33,14 +33,10 @@ export default class AppianEndpoint extends LightningElement {
             // returns a proxy. 
             // Can access proxy like regular array.
             this.appianObjects = JSON.parse( data ); 
-
-            /// *** TEST *** ///
         } 
         else if( error ){
             this.errorMessage = error.body.message;
 
-            /// *** TEST *** ///
-            console.log( this.errorMessage );
         }
     }
 
@@ -54,25 +50,13 @@ export default class AppianEndpoint extends LightningElement {
         // record since search requires constant updates to rowData.
         this.rowDataCopy = JSON.parse( JSON.stringify( this.rowData ) );
 
+        this.errorMessage = null;
 
-        // /// TEST ///
-        // if( this.appianObjects ) {
-        //     console.log( JSON.stringify( populateRowData( this.appianObjects ) ) );
-        // }
-
-        // let count = 0
-        // for( let i = 0; i < this.appianObjects.length; i++ ){
-        //     if( this.appianObjects[i].theme ){
-        //         console.log( this.appianObjects[i].theme[0] );
-        //         count += 1;
-        //     }
-        // }
-        // console.log( count );
     }
 
     handleOnChange = ( event ) => {
         if( !this.rowData ) {
-            this.errorMessage = 'No data found! Please try again';
+            this.errorMessage = 'No data found! Please generate data first!';
             return;
         }
 
@@ -83,10 +67,9 @@ export default class AppianEndpoint extends LightningElement {
             this.rowData = JSON.parse( JSON.stringify( this.rowDataCopy ) );
         }
 
-        this.rowData = searchFor( this.rowData, this.searchKeyWord );
-        
-        /// *** TEST *** ///
-        console.log( this.searchKeyWord );
+        this.rowData = searchFor( this.rowDataCopy, this.searchKeyWord );
+        this.errorMessage = null;
+ 
     }
 
 }
