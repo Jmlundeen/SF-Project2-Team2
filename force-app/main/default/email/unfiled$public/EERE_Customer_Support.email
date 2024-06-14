@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Dear {!Lead.FirstName},&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {!Today}]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[Thank you for reaching out to us regarding&nbsp;{!Case.Reason}. We apologize for any inconvenience this may have caused you and we appreciate the opportunity to assist you.<div><br></div><div><p>We understand the importance of your concern and will do our utmost to provide you with a prompt and satisfactory resolution. Our team is currently reviewing your request and will get back to you as soon as possible.&nbsp;</p><p><br></p><p>In the meantime, if you have any further information to add or any questions, feel free to reach out to us via your user portal. Your input helps us better understand your needs and ensures that we address your inquiry thoroughly.</p></div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[<font face="arial"><span style="font-size: 12pt;">Best regards,</span></font><div style=""><font face="arial">{!User.Name}</font></div>]]></td>
+</tr>
+</table>

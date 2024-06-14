@@ -4,7 +4,7 @@ export default class MessageComponent extends LightningElement {
     @track messages = []; // This array will store each message object
     appendText;
     messageContent;
-    OPENAI_API_KEY = 'sk-proj-BxJDOL7xNZvC9QdLvaL1T3BlbkFJbdLSDyUnqlIPYrRkIq7Q';
+    API_KEY = 'pk-jcQwLzJsyiyiftoTSiDtEHVMMDVEAGJHjbwUMIDroenRepDi';
 
     async createNewMsg(){
         // Push a new message object into the messages array
@@ -39,20 +39,20 @@ export default class MessageComponent extends LightningElement {
     }
 
     async createOutboundMsg(){
-        const URL = 'http://localhost:3040/v1/chat/completions';
+        const URL = 'https://api.pawan.krd/v1/chat/completions';
 
         try {
             // Make HTTP request to OpenAI API
             const response = await fetch(URL, {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${this.OPENAI_API_KEY}`
+                location: this.URL,
+                header: {
+                    'Content-Type': "application/json",
+                    'Authorization':  this.API_KEY,
                 },
-                body: JSON.stringify({
-                    model: 'gpt-3.5-turbo',
-                    prompt: this.messageContent,
-                    max_tokens:  3896// Adjust as needed
+                data: JSON.stringify({
+                    'messages': [{ role: 'user', content: this.messageContent }],
+                    'model': 'gpt-3.5-turbo',
                 })
             });
 
@@ -72,7 +72,6 @@ export default class MessageComponent extends LightningElement {
             
             this.messageContent = '';
         } catch(error) {
-            
             console.error('Error:', error);
         }
 
