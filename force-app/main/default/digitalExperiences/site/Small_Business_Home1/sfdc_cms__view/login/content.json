@@ -9,13 +9,16 @@
             "backgroundImageConfig" : "",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
             "componentSpacerSize" : "",
+            "dxpStyle" : { },
             "maxContentWidth" : "",
             "sectionColumnGutterWidth" : "",
             "sectionConfig" : "{\"UUID\":\"510977c0-5908-49af-8094-0bb7896e0507\",\"columns\":[{\"UUID\":\"72cacce8-70d6-4ecc-b7b1-3786aa028934\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":null},{\"UUID\":\"e21cf0d6-c91e-4446-b438-1d8c39fc7d9c\",\"columnName\":\"Column 2\",\"columnKey\":\"26328\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
           },
           "children" : [ {
             "children" : [ {
-              "attributes" : { },
+              "attributes" : {
+                "dxpStyle" : { }
+              },
               "definition" : "c:logo",
               "id" : "a4d035a5-6832-43e8-9d45-dbd918357736",
               "type" : "component"
@@ -26,7 +29,9 @@
             "type" : "region"
           }, {
             "children" : [ {
-              "attributes" : { },
+              "attributes" : {
+                "dxpStyle" : { }
+              },
               "definition" : "c:login",
               "id" : "f284ba0c-58e4-4a79-999c-6dda6076c7c9",
               "type" : "component"
@@ -49,6 +54,7 @@
           "attributes" : {
             "customHeadTags" : "",
             "description" : "",
+            "dxpStyle" : { },
             "pageTitle" : "Login",
             "recordId" : "{!recordId}"
           },

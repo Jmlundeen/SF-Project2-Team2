@@ -1,0 +1,56 @@
+<template>
+    <!-- Searches for leads by their email and last name -->
+    <lightning-card title="Search for your application by entering your email and last name">
+        <div class="slds-m-around_medium slds-size_1-of-3">
+            <lightning-input label="Email" value={email} onchange={handleEmailChange}></lightning-input>
+            <lightning-input label="Last Name" value={lastName} onchange={handleLastNameChange}></lightning-input>
+        </div>
+        <div class="slds-m-around_medium">
+            <lightning-button class="slds-button_brand" label="Search" onclick={handleSearch}></lightning-button>
+        </div>
+    </lightning-card>
+    <!-- display lead record with leadstatus path -->
+    <template lwc:if={applicant}>
+        <lightning-card title="Applicant Information">
+            <div class="slds-p-left_medium">
+                <c-progress-bar current-step={applicant.Status} steps={statusValues}></c-progress-bar>
+            </div>
+            <div class="slds-grid slds-align_absolute-center">
+                <div class="slds-col slds-size_1-of-3">
+                    <c-form-element field="Name" value={applicant.Name}></c-form-element>
+                    <c-form-element field="Region" value={applicant.Region__c}></c-form-element>
+                    <c-form-element field="State" value={applicant.State__c}></c-form-element>
+                    </div>
+                <div class="slds-col slds-size_1-of-12"></div>
+                <div class="slds-col slds-size_1-of-3">
+                    <c-form-element field="Email" value={applicant.Email} type="email"></c-form-element>
+                    <c-form-element field="Budget Share" value={applicant.Budget_Share__c} type="percent"></c-form-element>
+                    <c-form-element field="No. of Employees" value={applicant.NumberOfEmployees} type="number"></c-form-element>
+                </div>
+            </div>
+            <template lwc:if={applicantCanSubmitApps}>
+                <div class="slds-m-around_medium slds-align_absolute-center">
+                    <h2>Need to submit a concept paper or full application?</h2>
+                </div>
+                <div class="slds-m-around_medium slds-align_absolute-center">
+                    <lightning-button-group class="slds-m-around-medium" >
+                        <lightning-button class="slds-button_brand" label="Concept Paper" onclick={launchConceptPaperModal}></lightning-button>
+                        <lightning-button class="slds-button_brand" label="Full Application" onclick={launchApplicationModal}></lightning-button>
+                    </lightning-button-group>
+                </div>
+            </template>
+        </lightning-card>
+    </template>
+    <!-- display error message if no lead is found -->
+    <template lwc:elseif={applicantSearchError}>
+        <lightning-card title="Error">
+            <div class="slds-m-around_medium">
+                {applicantSearchError}
+            </div>
+        </lightning-card>
+    </template>
+    <!-- display spinner if spinner is true -->
+    <template lwc:elseif={spinner}>
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </template>
+</template>

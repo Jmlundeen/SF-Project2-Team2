@@ -2,13 +2,26 @@
         <div class="modal">
             <lightning-modal-header label="EERE Small Business Application"></lightning-modal-header>
             <lightning-modal-body>
-                <lightning-record-form
-                    object-api-name={objectApiName}
-                    fields={fields}
-                    onsuccess={closeOnSuccess}
-                    oncancel={closeOnCancel}
-                >
-                </lightning-record-form> 
+                <template lwc:if={recordId}>
+                    <lightning-record-form
+                        record-id={recordId}
+                        object-api-name={objectApiName}
+                        fields={fields}
+                        mode="edit"
+                        onsubmit={handleSubmit}
+                        oncancel={closeOnCancel}
+                        >
+                    </lightning-record-form>
+                </template>
+                <template lwc:else>
+                    <lightning-record-form
+                        object-api-name={objectApiName}
+                        fields={fields}  
+                        onsuccess={closeOnSave} 
+                        oncancel={closeOnCancel}
+                        >
+                    </lightning-record-form> 
+                </template>
             </lightning-modal-body>
         </div>
     </div>   
