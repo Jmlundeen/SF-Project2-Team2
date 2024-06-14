@@ -10,9 +10,14 @@ package.xml
 
 # prm dashboards and reports
 **/prm_channel*
+**/reportTypes/*
+**/profiles/*Home*
 
 # LWC Jest
 **/__tests__/**
 
 # appswitcher
 force-app/main/default/appMenus/*
+
+# custom object translation
+**/objectTranslations/**

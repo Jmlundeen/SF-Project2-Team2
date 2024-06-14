@@ -1,0 +1,104 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Application Status Page",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"9b26e464-76a3-4071-b178-0de775c85f55\",\"columns\":[{\"UUID\":\"5e21d7c4-0661-4dc0-b149-8838ef7a663d\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:nav",
+              "id" : "aafb82ef-3e59-4048-a2a2-74a7e4187d9a",
+              "type" : "component"
+            } ],
+            "id" : "5e21d7c4-0661-4dc0-b149-8838ef7a663d",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "9b26e464-76a3-4071-b178-0de775c85f55",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"d8292ebd-5359-4519-8656-1fd500821169\",\"columns\":[{\"UUID\":\"fc4608bb-9f2f-431c-b5d5-0b068a71d506\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "50px",
+                    "left" : "50px",
+                    "right" : "50px",
+                    "top" : "50px"
+                  }
+                }
+              },
+              "definition" : "c:applicantSearch",
+              "id" : "2252653f-4c8d-442f-bf9f-10d6c44d9720",
+              "type" : "component"
+            } ],
+            "id" : "fc4608bb-9f2f-431c-b5d5-0b068a71d506",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "d8292ebd-5359-4519-8656-1fd500821169",
+          "type" : "component"
+        } ],
+        "id" : "eddfe228-0664-4f13-8e10-ea6723d76c17",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Application Status Page",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "f46b0450-92bc-4405-804e-909197ecc5b4",
+          "type" : "component"
+        } ],
+        "id" : "0d7e623d-864f-4b88-9b1a-ad0af7b5c016",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "c956990e-dda5-4937-8d76-b6cc5b3ddd3c",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-application-status-page"
+  }
+}

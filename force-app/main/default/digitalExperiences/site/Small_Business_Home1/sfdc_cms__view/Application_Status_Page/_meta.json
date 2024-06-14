@@ -1,0 +1,5 @@
+{
+  "apiName" : "Application_Status_Page",
+  "type" : "sfdc_cms__view",
+  "path" : "views"
+}

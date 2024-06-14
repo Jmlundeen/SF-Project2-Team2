@@ -24,7 +24,7 @@ export default class PartnerAccountInformation extends LightningElement {
                 numberOfEmployees: record['NumberOfEmployees'],
                 annualRevenue: record['AnnualRevenue'],
                 budgetShare: Number(record['Budget_Share__c']) / 100,
-                fundingOpportunity: record['Funding_Opportunity_del__r'].Name,
+                fundingOpportunity: record['Funding_Opportunity_del__r']?.Name,
                 approvedFunding: record['Approved_Funding__c'],
                 contractLength: record['Contract_Length__c'] + ' months'
             };

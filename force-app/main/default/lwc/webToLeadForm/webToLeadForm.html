@@ -36,7 +36,7 @@
                         <!--  ----------------------------------------------------------------------  -->
                         <lightning-layout>
                             <lightning-layout-item size="6">
-                                <div>
+                                <div class="left">
                                     <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
                                 
                                     <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
@@ -89,7 +89,7 @@
                                     
                                     <label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
                                     
-                                    <p>State:</p><select  id="00Nbm000001XUIT" name="00Nbm000001XUIT" title="State"><option value="">--None--</option><option value="Illinois">Illinois</option>
+                                    <p>State</p><select  id="00Nbm000001XUIT" name="00Nbm000001XUIT" title="State"><option value="">--None--</option><option value="Illinois">Illinois</option>
                                     <option value="Indiana">Indiana</option>
                                     <option value="Iowa">Iowa</option>
                                     <option value="Michigan">Michigan</option>
@@ -143,7 +143,12 @@
                                     <option value="Utah">Utah</option>
                                     <option value="Wyoming">Wyoming</option>
                                     </select><br>
-
+                                    <p>Region</p><select  id="00NRL0000061fXc" name="00NRL0000061fXc" title="Region"><option value="">--None--</option><option value="Great Lakes">Great Lakes</option>
+                                        <option value="Northeast">Northeast</option>
+                                        <option value="Pacific">Pacific</option>
+                                        <option value="Southern">Southern</option>
+                                        <option value="Western">Western</option>
+                                        </select><br>
                                     <img src={socialUrl} alt="social media icons">
                                 </div>                         
                             </lightning-layout-item>

@@ -1,115 +1,97 @@
 <template>
-    <footer>
-        <lightning-layout>
-            <lightning-layout-item size="6">
-                <div class="left-container">
-                    <lightning-layout>
-                        <lightning-layout-item  size="6">
-                            <div class="txt">
-                                <p>Office of <br>Energy Efficiency &amp; Renewable Energy</p><br>
-                                <p>Office of Energy Efficiency &amp; Renewable Energy</p>
-                                <p>Forrestal Building</p>
-                                <lightning-formatted-address
-                                    street="1000 Independence Ave, SW"
-                                    city="Washington"
-                                    province="DC"
-                                    postal-code="20585"
-                                ></lightning-formatted-address><br>
-                                <p>An office of</p>
-                                <img src={imageUrl} alt="White EERE Logo">
-                            </div>
-                        </lightning-layout-item>
-                        <lightning-layout-item  size="6">
-                            <div>
-                                <h1>ABOUT OFFICE OF ENERGY EFFICIENCY &amp;<br>RENEWABLE</h1><br>
-                                <a href="">EERE Home</a><br>
-                                <a href="">EERE Publications</a><br>
-                                <a href=""> Contact EERE</a>
-                            </div> 
-                        </lightning-layout-item>
-                    </lightning-layout>    
-                </div>
+    <footer class="slds-grid">
+        <div class="leftContainer slds-col slds-grid slds-size_1-of-2">
+            <div class="left slds-col">
+                <p>Office of <br>Energy Efficiency &amp; Renewable Energy</p><br>
+                <p>Office of Energy Efficiency &amp; Renewable Energy</p>
+                <p>Forrestal Building</p>
+                <p>1000 Independence Ave, SW</p>
+                <p>Washington, DC 20585</p><br>
+                <p>An office of</p>
+                <img src={imageUrl} alt="White EERE Logo">
+            </div>
+            <div class="right slds-col">
+                <h1>ABOUT OFFICE OF ENERGY EFFICIENCY &amp;<br>RENEWABLE ENERGY</h1><br>
+                <p>EERE Home</p>
+                <p>EERE Publications</p>
+                <p> Contact EERE</p>
+            </div>
+        </div>
+        <div class="rightContainer slds-col slds-grid slds-size_1-of-2">
+            <div class="left slds-col">
+                <h1>ENERGY.GOV RESOURCES</h1><br>
+                <p>Budget &amp; Performance</p>
+                <p>Covid-19 Response</p>
+                <p>Directives, Delegation &amp; Requirements</p>
+                <p>FOIA</p>
+                <p>Inspector General</p>
+                <p>Privacy Program</p>
+                <p>Small Business</p>
+            </div>
+            <div class="right slds-col">
+                <h1>FEDERAL GOVERNMENT</h1><br>
+                <p>The White House</p>
+                <p>USA.gov</p>
+                <p>Vote.gov</p>  
+            </div>
+        </div>
+    </footer>
+    <div class="bottom">
+        <lightning-layout horizontal-align="space" class="slds-p-top_x-small">
+            <lightning-layout-item padding="around-small">
+                <p>Web Policies</p>
             </lightning-layout-item>
-            <lightning-layout-item size="6">
-                <div class="right-container">
-                    <lightning-layout>
-                        <lightning-layout-item  size="6">
-                            <h1>ENERGY.GOV RESOURCES</h1><br>
-                            <a href="">Budget &amp; Performance</a><br>
-                            <a href="">Covid-19 Response</a><br>
-                            <a href="">Directives, Delegation &amp; Requirements</a><br>
-                            <a href="">FOIA</a><br>
-                            <a href="">Inspector General</a><br>
-                            <a href="">Privacy Program</a><br>
-                            <a href="">Small Business</a>
-                        </lightning-layout-item>
-                        <lightning-layout-item size="6">
-                            <h1>FEDERAL GOVERNMENT</h1><br>
-                            <a href="">The White House</a><br>
-                            <a href="">USA.gov</a><br>
-                            <a href="">Vote.gov</a>  
-                        </lightning-layout-item>
-                    </lightning-layout>         
-                </div>
-            </lightning-layout-item>  
+            <lightning-layout-item padding="around-small">
+                <p> &#8231;</p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p>Privacy</p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p> &#8231;</p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p>No Fear Act</p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p> &#8231;</p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p>Whistleblower Protection</p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p> &#8231;</p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p>Notice of EEO Findings of Discrimination</p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p> &#8231;</p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p>Information Quality</p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p> &#8231;</p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p>Open Gov</p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p> &#8231;</p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p>Accessibility</p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p> &#8231;</p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p>Vulnernability Disclosure Program</p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p> &#8231;</p>
+            </lightning-layout-item>
         </lightning-layout>
-        <div class="bottom">
-            <lightning-layout horizontal-align="space" class="slds-p-top_x-small">
-                <lightning-layout-item padding="around-small">
-                    <a href="">Web Policies</a>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <p> &#8231;</p>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <a href="">Privacy</a>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <p> &#8231;</p>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <a href="">No Fear Act</a>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <p> &#8231;</p>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <a href="">Whistleblower Protection</a>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <p> &#8231;</p>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <a href="">Notice of EEO Findings of Discrimination</a>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <p> &#8231;</p>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <a href="">Information Quality</a>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <p> &#8231;</p>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <a href="">Open Gov</a>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <p> &#8231;</p>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <a href="">Accessibility</a>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <p> &#8231;</p>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <a href="">Vulnernability Disclosure Program</a>
-                </lightning-layout-item>
-                <lightning-layout-item padding="around-small">
-                    <p> &#8231;</p>
-                </lightning-layout-item>
-            </lightning-layout>
-        </div>     
-    </footer> 
+    </div>    
 </template>

@@ -1,0 +1,11 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Application Status Page",
+  "contentBody" : {
+    "activeViewId" : "Application_Status_Page",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-application-status-page",
+    "urlPrefix" : "application-status-page"
+  }
+}
