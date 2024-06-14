@@ -1,49 +1,8 @@
-/* Styling the radio buttons */
-.carousel-navigation {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  .carousel-radio {
-    display: none;
-  }
-
-  .carousel-label {
-    width: 30px;
-    height: 7.5px;
-    background-color: #888;
-    margin: 0px 5px;
-    cursor: pointer;
-  }
-
-  /* Styling for active radio button */
-  .carousel-radio:checked + label {
-    background-color: #ffffff;
-  }
-
-  /* Carousel animation */
-  .carousel {
-    max-width: 100%;
-    height: auto;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    background-color: #010101;
-    animation: slide 10s infinite;
-  }
-  .carousel-item {
-    flex: 0 0 33.33%;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    color: #ffffff;
-  }
-
-  @keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-200%); }
-  }
+p {
+  background-color: #010101;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  padding: 50px;
+}
