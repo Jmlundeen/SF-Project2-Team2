@@ -1,3 +1,9 @@
 import { LightningElement } from 'lwc';
 
-export default class CustomPageLayoutAcct extends LightningElement {}
+/*@slot header
+@slot sideBar
+@slot main
+*/
+export default class CustomPageLayoutAcct extends LightningElement {
+    
+}

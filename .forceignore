@@ -18,3 +18,6 @@ package.xml
 
 # appswitcher
 force-app/main/default/appMenus/*
+
+# custom object translation
+**/objectTranslations/**

@@ -1,14 +1,15 @@
-.button{
-    border-radius: 50px;
-}
 .navBar a{
     color: black;
     text-decoration: none;
+    font-size: 1rem;
 }
-.navBar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 16px;
+img{
+    width: 30%;
 }
+.button{
+    padding: 0px;
+    font-size: 1rem;
+    --sds-c-button-text-color: #000000;
+}
+
 

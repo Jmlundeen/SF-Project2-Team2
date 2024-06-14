@@ -11,3 +11,7 @@ main{
     display: grid;
     grid-template-columns: auto 1fr;
 }
+.vertical-container{
+    display: flex;
+    flex-direction: column;
+}

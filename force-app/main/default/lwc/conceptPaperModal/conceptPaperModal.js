@@ -1,4 +1,4 @@
-import {LightningElement } from 'lwc';
+import {LightningElement, api } from 'lwc';
 import LightningModal from 'lightning/modal';
 import NAME_FIELD from '@salesforce/schema/Lead.Name';
 import PHONE_FIELD from '@salesforce/schema/Lead.Phone';
@@ -15,6 +15,7 @@ import CONCEPT_PAPER from '@salesforce/schema/Lead';
 export default class ConceptPaperModal extends LightningModal {
     
     objectApiName = CONCEPT_PAPER;
+    @api recordId;
 
     fields = [NAME_FIELD, 
               PHONE_FIELD, 
@@ -28,11 +29,18 @@ export default class ConceptPaperModal extends LightningModal {
               BUDGET_FIELD
             ];
 
-            closeOnSave(event){
-                this.close(event.detail.id);
-            }
-            closeOnCancel(){
-                this.close();
-            }
+    closeOnSave(event){
+        this.close(event.detail.id);
+    }
+    closeOnCancel(){
+        this.close();
+    }
+    handleSubmit(event) {
+        event.preventDefault();
+        const fields = event.detail.fields;
+        fields.Status = 'Concept Paper';
+        this.template.querySelector('lightning-record-form').submit(fields);
+        this.close();
+    }
 
 }

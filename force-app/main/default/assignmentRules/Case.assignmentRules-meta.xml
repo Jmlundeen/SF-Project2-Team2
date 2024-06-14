@@ -88,5 +88,14 @@
                 <value>Partner</value>
             </criteriaItems>
         </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Web_Case_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web</value>
+            </criteriaItems>
+        </ruleEntry>
     </assignmentRule>
 </AssignmentRules>
