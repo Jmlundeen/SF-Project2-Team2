@@ -12,13 +12,13 @@ export default class AppianEndpoint extends LightningElement {
 
     // Col Data holds the table headers.
     colData = [
-        { label: 'Title', fieldName: 'title', type:'text' },
-        { label: 'Identifer', fieldName: 'identifier', type:'text' },
-        { label: 'Publisher', fieldName: 'publisher', type:'text' },
-        { label: 'Contact', fieldName: 'contact', type:'text' },
-        { label: 'Bureau Code', fieldName: 'bureauCode', type:'text' },
-        { label: 'Program Code', fieldName: 'programCode', type:'text' },
-        { label: 'Theme', fieldName: 'theme', type:'text' },
+        { label: 'Title', fieldName: 'title', type:'text'},
+        { label: 'Identifer', fieldName: 'identifier', type:'text'},
+        { label: 'Publisher', fieldName: 'publisher', type:'text'},
+        { label: 'Contact', fieldName: 'contact', type:'text'},
+        { label: 'Bureau Code', fieldName: 'bureauCode', type:'text'},
+        { label: 'Program Code', fieldName: 'programCode', type:'text'},
+        { label: 'Theme', fieldName: 'theme', type:'text'},
     ]
 
     // Row Data holds the actual records.

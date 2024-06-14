@@ -1,69 +1,118 @@
 <!-- sldsValidatorIgnore -->
 <!-- sldsValidatorIgnore -->
 <template>
-    <!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+  <!--  If necessary, please modify the charset parameter to specify the        -->
+  <!--  character set of your HTML page.                                        -->
+  <!--  ----------------------------------------------------------------------  -->
 
-<!--<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">-->
+  <!--<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">-->
 
-    <!--  ----------------------------------------------------------------------  -->
-    <!--  NOTE: Please add the following <FORM> element to your page.             -->
-    <!--  ----------------------------------------------------------------------  -->
-    <div class="container">
-        <lightning-layout>
-            <lightning-layout-item size="6">
-                <div class="left">
-                    <img src={imgUrl} alt="support person">
-                </div>
-            </lightning-layout-item>
-            <lightning-layout-item size="6">
-                <div class="right">
-                    <h1>EERE Customer Support</h1>
-                    <form action="https://customization-momentum-583-dev-ed.scratch.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DRL000003XzNx" method="POST">
-            
-                        <!-- sldsValidatorIgnoreNextLine -->
-                        <input type=hidden name="orgid" value="00DRL000003XzNx">
-                        <input type=hidden name="retURL" value="https://customization-momentum-583-dev-ed.scratch.builder.salesforce-experience.com/sfsites/picasso/core/config/commeditor.jsp?exitURL=https%3A%2F%2Fcustomization-momentum-583-dev-ed.scratch.my.salesforce.com%2Fservlet%2Fnetworks%2Fswitch%3FnetworkId%3D0D">
-                        
-                        <!--  ----------------------------------------------------------------------  -->
-                        <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-                        <!--  these lines if you wish to test in debug mode.                          -->
-                        <!--  <input type="hidden" name="debug" value=1>                              -->
-                        <!--  <input type="hidden" name="debugEmail"                                  -->
-                        <!--  value="eere-no-reply@proton.me">                                        -->
-                        <!--  ----------------------------------------------------------------------  -->
-                        
-                        <label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
-                        
-                        <label for="company">Company</label><input  id="company" maxlength="80" name="company" size="20" type="text" /><br>
-                        
-                        <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-                        
-                        <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-                        
-                        <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
-                        
-                        <label for="reason">Case Reason</label><select  id="reason" name="reason"><option value="">--None--</option><option value="Installation">Installation</option>
-                        <option value="Equipment Complexity">Equipment Complexity</option>
-                        <option value="Performance">Performance</option>
-                        <option value="Breakdown">Breakdown</option>
-                        <option value="Equipment Design">Equipment Design</option>
-                        <option value="Feedback">Feedback</option>
-                        <option value="Other">Other</option>
-                        </select><br>
-                        
-                        <label for="description">Description</label><textarea name="description"></textarea><br>
-                        
-                        <input type="hidden"  id="external" name="external" value="1" /><br>
-                        
-                        <input type="submit" name="submit">
-                        
-                        </form>
-                </div>
-            </lightning-layout-item>
-        </lightning-layout>
-    </div>    
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTE: Please add the following <FORM> element to your page.             -->
+  <!--  ----------------------------------------------------------------------  -->
+  <div class="container">
+    <lightning-layout>
+      <lightning-layout-item size="6">
+        <div class="left">
+          <img src={imgUrl} alt="support person" />
+        </div>
+      </lightning-layout-item>
+      <lightning-layout-item size="6">
+        <div class="right">
+          <h1>EERE Customer Support</h1>
+          <form
+            action="https://customization-momentum-583-dev-ed.scratch.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DRL000003XzNx"
+            method="POST"
+          >
+            <!-- sldsValidatorIgnoreNextLine -->
+            <input type="hidden" name="orgid" value="00DRL000003XzNx" />
+            <input
+              type="hidden"
+              name="retURL"
+              value="https://skillstorm62-dev-ed.develop.my.site.com/"
+            />
+
+            <!--  ----------------------------------------------------------------------  -->
+            <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+            <!--  these lines if you wish to test in debug mode.                          -->
+            <!--  <input type="hidden" name="debug" value=1>                              -->
+            <!--  <input type="hidden" name="debugEmail"                                  -->
+            <!--  value="eere-no-reply@proton.me">                                        -->
+            <!--  ----------------------------------------------------------------------  -->
+
+            <label for="name">Contact Name</label
+            ><input
+              id="name"
+              maxlength="80"
+              name="name"
+              size="20"
+              type="text"
+            /><br />
+
+            <label for="company">Company</label
+            ><input
+              id="company"
+              maxlength="80"
+              name="company"
+              size="20"
+              type="text"
+            /><br />
+
+            <label for="email">Email</label
+            ><input
+              id="email"
+              maxlength="80"
+              name="email"
+              size="20"
+              type="text"
+            /><br />
+
+            <label for="phone">Phone</label
+            ><input
+              id="phone"
+              maxlength="40"
+              name="phone"
+              size="20"
+              type="text"
+            /><br />
+
+            <label for="subject">Subject</label
+            ><input
+              id="subject"
+              maxlength="80"
+              name="subject"
+              size="20"
+              type="text"
+            /><br />
+
+            <label for="reason">Case Reason</label
+            ><select id="reason" name="reason">
+              <option value="">--None--</option>
+              <option value="Installation">Installation</option>
+              <option value="Equipment Complexity">Equipment Complexity</option>
+              <option value="Performance">Performance</option>
+              <option value="Breakdown">Breakdown</option>
+              <option value="Equipment Design">Equipment Design</option>
+              <option value="Feedback">Feedback</option>
+              <option value="Other">Other</option></select
+            ><br />
+
+            <label for="description">Description</label
+            ><textarea name="description"></textarea><br />
+
+            <input
+              type="hidden"
+              id="external"
+              name="external"
+              value="1"
+            /><br />
+
+            <input type="submit" name="submit" />
+          </form>
+        </div>
+      </lightning-layout-item>
+    </lightning-layout>
+  </div>
 </template>

@@ -1,6 +1,9 @@
 <template>
-  <h2>This is Appian Endpoint Component</h2>
-  <lightning-button label="Click Me" onclick={handleClick}></lightning-button>
+  <lightning-button
+    label="Download Data"
+    onclick={handleClick}
+    class="download"
+  ></lightning-button>
   <template lwc:if={errorMessage}>
     <div class="slds-text-color_error">{errorMessage}</div>
   </template>

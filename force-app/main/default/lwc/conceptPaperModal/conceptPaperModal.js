@@ -1,4 +1,4 @@
-import {LightningElement, api } from 'lwc';
+import { api } from 'lwc';
 import LightningModal from 'lightning/modal';
 import NAME_FIELD from '@salesforce/schema/Lead.Name';
 import PHONE_FIELD from '@salesforce/schema/Lead.Phone';
