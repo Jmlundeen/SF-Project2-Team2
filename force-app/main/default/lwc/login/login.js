@@ -1,6 +1,7 @@
 import { LightningElement, wire } from "lwc";
 import { NavigationMixin } from "lightning/navigation";
 import getUser from "@salesforce/apex/LoginHandler.getUser";
+import Id from "@salesforce/user/Id";
 
 export default class Login extends NavigationMixin(LightningElement) {
   errorMessage;
@@ -10,6 +11,7 @@ export default class Login extends NavigationMixin(LightningElement) {
   // Reactive vars.
   userName;
   userPassword;
+  userId = Id;
 
   emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -18,34 +20,22 @@ export default class Login extends NavigationMixin(LightningElement) {
     password: "$userPassword"
   })
   verifyLogin({ data, error }) {
+    console.log("login comp", this.userId);
     if (data) {
       // ***TEST*** //
       console.log(data);
-
-      switch (Number(data)) {
-        // If verifyLogin returns -1: no users found.
-        case -1:
-          this.errorMessage = "No users found!";
-          break;
-
-        // If verifyLogin returns 0: found user but inactive.
-        case 0:
-          this.errorMessage =
-            "User is inactive, please contact Admin for more info!";
-          break;
-
-        // default: found active user.
-        default:
-          // Navigate to home page.
-          this.navigateToHome();
-          this.errorMessage = null;
-          break;
+      if (data.startsWith('http')){
+        window.location.href = data;
+        this.errorMessage = null;
+      }
+      else {
+        this.errorMessage = data;
       }
     } else if (error) {
       this.errorMessage = error.body.message;
 
       // ***TEST*** //
-      console.log(error.body.message);
+      console.log("login comp", error.body.message);
     }
   }
 
@@ -119,6 +109,16 @@ export default class Login extends NavigationMixin(LightningElement) {
       type: "comm__namedPage",
       attributes: {
         name: "Home"
+      }
+    });
+  }
+
+  
+  navigateToAccount() {
+    this[NavigationMixin.Navigate]({
+      type: "comm__namedPage",
+      attributes: {
+        name: "small_business_account__c"
       }
     });
   }
