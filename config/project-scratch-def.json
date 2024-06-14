@@ -1,7 +1,7 @@
 {
-  "orgName": "Project 2 Scratch Org",
+  "orgName": "Project 2 Scratch Org - Man",
   "edition": "Developer",
-  "features": ["Communities","Sites", "EnableSetPasswordInApi"],
+  "features": ["Communities", "Sites", "EnableSetPasswordInApi"],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
