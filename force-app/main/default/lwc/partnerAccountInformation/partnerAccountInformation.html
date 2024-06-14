@@ -1,5 +1,5 @@
 <template>
-    <lightning-card title="Partner Account Information" icon-name="standard:account">
+    <lightning-card title="Your Account Information" icon-name="standard:account">
         <div class="slds-var-m-around_medium">
             <template lwc:if={account}>
                 <c-account-violation-error account={account}></c-account-violation-error>
@@ -23,6 +23,11 @@
                         <c-form-element field="Approved Funding" value={account.approvedFunding} type="number"></c-form-element>
                         <c-form-element field="Contract Length" value={account.contractLength}></c-form-element>
                     </div>
+                </div>
+            </template>
+            <template lwc:else>
+                <div class="slds-text-align_center">
+                    <p>{errorMessage}</p>
                 </div>
             </template>
         </div>

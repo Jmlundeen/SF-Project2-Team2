@@ -32,6 +32,7 @@ export default class PartnerAccountInformation extends LightningElement {
             console.log('account', this.account);
             this.error = null;
         } else if (result.error) {
+            console.error('error', result.error);
             this.error = result.error.body.message;
             this.account = null;
         }

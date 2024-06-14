@@ -12,7 +12,7 @@ public without sharing class PortalUserHandler {
         user.Email = contact.Email;
         user.LastName = contact.LastName;
         user.FirstName = contact.FirstName;
-        user.Alias = contact.FirstName.substring(0, 1) + contact.LastName;
+        user.Alias = contact.FirstName.substring(0, 1) + contact.LastName.substring(0, 6);
         user.CommunityNickname = contact.FirstName + contact.LastName;
         user.ProfileId = [SELECT Id FROM Profile WHERE Name='EERE Small Business Site User' LIMIT 1].Id;
         user.TimeZoneSidKey = 'America/Los_Angeles';

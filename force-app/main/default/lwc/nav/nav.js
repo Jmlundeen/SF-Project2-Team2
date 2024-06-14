@@ -1,47 +1,47 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, track } from 'lwc';
 import IMAGES from '@salesforce/resourceUrl/Images';
 import { NavigationMixin } from 'lightning/navigation';
 import Id from '@salesforce/user/Id';
+import getLogoutUrl from '@salesforce/apex/applauncher.IdentityHeaderController.getLogoutUrl';
+import { navigateToHome, navigateToContact, navigateToLogin, navigateToAccount, navigateToSupport,
+    navigateToBusinessAccount, navigateToAppStatus } from 'c/navUtil';
 
 export default class Nav extends NavigationMixin(LightningElement) {
 
-    userId = Id;
+    @track userId = Id;
     logoUrl = IMAGES + '/EERE.png';
 
-    navigateToHome() {
-        this[NavigationMixin.Navigate]({
-            type: 'comm__namedPage',
-            attributes: {
-                name: 'Home'
-            }
-        });
+    goToHome() {
+        navigateToHome(this);
     }
 
-    navigateToContact() {
-        this[NavigationMixin.Navigate]({
-        type: "comm__namedPage",
-        attributes: {
-            name: "Contact_Us__c"
-        }
-        });
+    goToContact() {
+        navigateToContact(this);
     }
 
-    navigateToLogin(){
-        this[NavigationMixin.Navigate]({
-            type: 'comm__namedPage',
-            attributes: {
-                name: 'Login'
-            }
-        });
+    goToLogin() {
+        navigateToLogin(this);
     }
 
-    
-    navigateToAccount() {
-        this[NavigationMixin.Navigate]({
-        type: "comm__namedPage",
-        attributes: {
-            name: "small_business_account__c"
-        }
-        });
+    goToAccount() {
+        navigateToAccount(this);
+    }
+
+    goToSupport() {
+        navigateToSupport(this);
+    }
+
+    goToProfile() {
+        navigateToBusinessAccount(this);
+    }
+
+    async goToLogout() {
+        const logoutUrl = await getLogoutUrl();
+        await fetch(logoutUrl)
+        navigateToHome(this);
+    }
+
+    goToAppStatus() {
+        navigateToAppStatus(this);
     }
 }

@@ -53,7 +53,6 @@ export default class SelfRegistration extends NavigationMixin(LightningElement) 
         this.email = this.tempEmail;
         this.password = this.tempPassword;
         this.accessCode = this.tempAccessCode;
-        this.navigateToHome();
     }
 
     navigateToHome() {

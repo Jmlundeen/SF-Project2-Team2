@@ -18,7 +18,7 @@ private class PartnerAccountInformationController_Test {
     acc.Enrollment_Date__c = Date.today();
     insert acc;
 
-    Contact contact = new Contact(LastName = 'Test', AccountId = acc.Id);
+    Contact contact = new Contact(LastName = 'Test', AccountId = acc.Id, Email = 'testuser@test.com');
     insert contact;
 
     User user = new User(ContactId = contact.Id);

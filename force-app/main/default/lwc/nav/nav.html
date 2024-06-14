@@ -4,31 +4,40 @@
         <img src={logoUrl} alt="EERE Logo">
       </div>  
       <div class="slds-col">
-        <a href="">Home</a>
+        <a onclick={goToHome}>Home</a>
       </div>  
       <div class="slds-col">
-        <a href="">About EERE</a>
+        <a onclick={goToSupport}>Support</a>
       </div>  
       <div class="slds-col">
-        <a href="#">Resources</a>
+        <a onclick={goToContact}>Contact Us</a> 
       </div>  
       <div class="slds-col">
-        <a href="">Buildings &amp; Industry</a> 
+        <a onclick={goToAppStatus}>Application Status</a>
       </div>  
       <div class="slds-col button">
         <lightning-button-menu label="More" variant="bare">
           <lightning-menu-item value="Renewable" label="Renewable Energy"></lightning-menu-item>
           <lightning-menu-item value="Sustainable" label="Sustainable Transport"></lightning-menu-item>
           <lightning-menu-item 
-              value="Contact"  
-              label="Contact Us" 
-              onclick={navigateToContact}
+              value="Resources"  
+              label="Resources"
           > 
           </lightning-menu-item>
         </lightning-button-menu>
-      </div>  
-      <div class="slds-col">
-        <a href={navigateToLogin}>Login</a>
-      </div>     
+      </div>
+      <template lwc:if={userId}>
+        <div class="slds-col">
+          <a onclick={goToProfile}>Profile</a>
+        </div>
+        <div class="slds-col">
+          <a onclick={goToLogout}>Logout</a>
+        </div>
+      </template>
+      <template lwc:else>
+        <div class="slds-col">
+          <a onclick={goToLogin}>Login</a>
+        </div>
+      </template>
     </div>
 </template>

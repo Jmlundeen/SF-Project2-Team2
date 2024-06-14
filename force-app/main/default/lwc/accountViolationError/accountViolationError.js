@@ -5,22 +5,22 @@ export default class AccountViolationError extends LightningElement {
     errorMessage;
 
     get isViolation() {
-        if (!this.account || (this.account.active === true && this.account.numberOfEmployees <= 1500 && this.account.annualRevenue <= 40_000_000)) {
+        if (!this.account) {
             return false;
         }
         this.errorMessage = 'Your account is in violation of our business requirements. Please fix the following issues:';
-
+        violations = '';
         if (this.account.active === false) {
-            this.errorMessage += '\nAccount is not active.';
+            this.violations += '\nAccount is not active.';
         }
 
         if (this.account.numberOfEmployees > 1500) {
-            this.errorMessage += '\nNumber of employees exceeds 1500.';
+            this.violations += '\nNumber of employees exceeds 1500.';
         }
 
         if (this.account.annualRevenue > 40_000_000) {
-            this.errorMessage += '\nAnnual revenue exceeds $40,000,000.';
+            this.violations += '\nAnnual revenue exceeds $40,000,000.';
         }
-        return true;
+        return this.violations === '';
     }
 }
