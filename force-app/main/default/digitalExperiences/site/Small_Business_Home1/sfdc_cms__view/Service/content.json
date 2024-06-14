@@ -1,6 +1,6 @@
 {
   "type": "sfdc_cms__view",
-  "title": "Login",
+  "title": "Service",
   "contentBody": {
     "component": {
       "children": [
@@ -13,30 +13,30 @@
                 "componentSpacerSize": "",
                 "maxContentWidth": "",
                 "sectionColumnGutterWidth": "",
-                "sectionConfig": "{\"UUID\":\"510977c0-5908-49af-8094-0bb7896e0507\",\"columns\":[{\"UUID\":\"72cacce8-70d6-4ecc-b7b1-3786aa028934\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+                "sectionConfig": "{\"UUID\":\"5d6a7eb7-6a80-47a6-a2e2-30ca33e595e2\",\"columns\":[{\"UUID\":\"04fd247e-1b99-4b49-aadd-15a8f9a2966b\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
               },
               "children": [
                 {
                   "children": [
                     {
                       "attributes": {},
-                      "definition": "c:login",
-                      "id": "52426e30-db9c-4c0c-94a5-9a1e10bc724c",
+                      "definition": "c:supportForm",
+                      "id": "f61aa5c2-c9a6-44a3-adce-bc44d2c76f2b",
                       "type": "component"
                     }
                   ],
-                  "id": "72cacce8-70d6-4ecc-b7b1-3786aa028934",
+                  "id": "04fd247e-1b99-4b49-aadd-15a8f9a2966b",
                   "name": "col1",
                   "title": "Column 1",
                   "type": "region"
                 }
               ],
               "definition": "community_layout:section",
-              "id": "510977c0-5908-49af-8094-0bb7896e0507",
+              "id": "5d6a7eb7-6a80-47a6-a2e2-30ca33e595e2",
               "type": "component"
             }
           ],
-          "id": "404ca790-cd40-4ae9-9b91-ab3c447dd300",
+          "id": "9a02211a-a036-44e9-adb6-d72bcded90e8",
           "name": "content",
           "title": "Content",
           "type": "region"
@@ -47,26 +47,26 @@
               "attributes": {
                 "customHeadTags": "",
                 "description": "",
-                "pageTitle": "Login",
+                "pageTitle": "Service",
                 "recordId": "{!recordId}"
               },
               "definition": "community_builder:seoAssistant",
-              "id": "d4ac2de3-508d-4438-acd7-b5ad3bb08f32",
+              "id": "af61f2c8-56fc-4acb-a5d3-125235a188ff",
               "type": "component"
             }
           ],
-          "id": "a4fe92b2-d5e6-44b9-be74-c025fa159d0e",
+          "id": "41cd2bfc-c7e1-43e5-8120-e840be7e8d69",
           "name": "sfdcHiddenRegion",
           "title": "sfdcHiddenRegion",
           "type": "region"
         }
       ],
       "definition": "community_layout:sldsFlexibleLayout",
-      "id": "e641b27b-4064-4f57-8689-e19117c72a89",
+      "id": "ccf3927d-c5ee-4e17-9484-938fe798b3bd",
       "type": "component"
     },
     "dataProviders": [],
     "themeLayoutType": "Inner",
-    "viewType": "login-main"
+    "viewType": "custom-service"
   }
 }

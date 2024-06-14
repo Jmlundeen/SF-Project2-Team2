@@ -1,0 +1,13 @@
+{
+  "type": "sfdc_cms__trustedSites",
+  "title": "trustedSites",
+  "contentBody": {
+    "trustedSites": [
+      {
+        "isActive": true,
+        "source": "https://api.pawan.krd/v1/chat/completions",
+        "sourceName": "ChatGPT Proxy"
+      }
+    ]
+  }
+}
